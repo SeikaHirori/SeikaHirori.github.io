@@ -6,3 +6,5 @@ description: Welcome to my site! Follow me as I progress through my programming 
 
 plugins:
 - jekyll-remote-theme 
+
+exclude: [_Docs, _Drafts,]
