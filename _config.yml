@@ -1,3 +1,8 @@
-theme: pages-themes/time-machine@v0.2.0
+remote_theme: pages-themes/time-machine@v0.2.0
+
 title: Seika Hirori's homepage
+
 description: Welcome to my site! Follow me as I progress through my programming journey :3
+
+plugins:
+- jekyll-remote-theme 
