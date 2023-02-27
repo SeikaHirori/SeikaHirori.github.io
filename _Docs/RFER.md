@@ -14,3 +14,6 @@
     - https://pandoc.org/
     - https://github.com/Wandmalfarbe/pandoc-latex-template
         - template for markdown to PDF
+
+- RFER #5 - Jekyll guide to learning how to use framework:
+    - https://jekyllrb.com/docs/step-by-step/01-setup/
