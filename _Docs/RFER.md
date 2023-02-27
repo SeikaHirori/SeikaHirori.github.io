@@ -10,6 +10,7 @@
     - https://jekyllrb.com/docs/posts/
     - "_posts" folder | blog posts are held here
 
-- RFER #4 - Converting format docx to md | using Pandoc
+- RFER #4 - Converting format Microsft docx to markdown | using Pandoc
     - https://pandoc.org/
     - https://github.com/Wandmalfarbe/pandoc-latex-template
+        - template for markdown to PDF
