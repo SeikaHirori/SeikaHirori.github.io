@@ -8,3 +8,7 @@ plugins:
 - jekyll-remote-theme 
 
 # exclude: [_Docs, _Drafts,]
+
+collections:
+  authors:
+    output: true
