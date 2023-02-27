@@ -18,12 +18,12 @@ defaults:
       path: ""
       type: "authors"
     values:
-      layouts: "author"
+      layout: "author"
   - scope:
       path: ""
       type: "posts"
     values:
-      layouts: "post"
+      layout: "post"
   - scope:
       path: ""
     values:
