@@ -12,3 +12,19 @@ plugins:
 collections:
   authors:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layouts: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layouts: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
