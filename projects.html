@@ -6,9 +6,9 @@ title: projects
 <h2>Here are some highlights!</h2>
 
 <ul>
-    {% for project in site.data.projects %}
+    {% for project in site.projects %}
         <li>
-            <h2><a href=" {{project.repo}} "> {{ project.name }} </a></h2>
+            <h2><a href=" {{ project.url }} "> {{ project.title }} </a></h2>
             <h3>Tools: {{ project.tools }}</h3>
         </li>
     {% endfor %}
