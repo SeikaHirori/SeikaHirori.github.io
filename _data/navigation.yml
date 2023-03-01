@@ -2,9 +2,11 @@
 
 - name: Home
   link: /
+- name: Projects
+  link: /projects.html
 - name: Blog
   link: /blog.html
 - name: About
   link: /about.html
-- name: Staff
-  link: /staff.html
+# - name: Staff
+#   link: /staff.html

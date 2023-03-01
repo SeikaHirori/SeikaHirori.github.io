@@ -1,0 +1,17 @@
+---
+layout: default
+title: projects
+---
+<h1>Latest Projects</h1>
+<h2>Here are some highlights!</h2>
+
+<ul>
+    {% for project in site.data.projects %}
+        <li>
+            <h2><a href=" {{project.repo}} "> {{ project.name }} </a></h2>
+            <h3>Tools: {{ project.tools }}</h3>
+        </li>
+    {% endfor %}
+</ul>
+
+<h3>If you like to view more of my projects, they can be viewed <a href="https://github.com/SeikaHirori?tab=repositories">here.</a></h3>
