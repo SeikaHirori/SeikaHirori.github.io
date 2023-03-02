@@ -2,6 +2,7 @@ title: Seika Hirori's homepage
 
 description: Welcome to my site! Follow me as I progress through my programming journey :3
 
+# theme: minima
 remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one

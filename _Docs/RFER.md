@@ -17,3 +17,7 @@
 
 - RFER #5 - Jekyll guide to learning how to use framework:
     - https://jekyllrb.com/docs/step-by-step/01-setup/
+
+- RFER #6 - How to use remote theme
+    - Link: https://github.com/orgs/community/discussions/21543#discussioncomment-3233635
+    - Import into "assets/css/style.scss"
