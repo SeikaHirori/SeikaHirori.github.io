@@ -2,3 +2,9 @@
 ---
 
 @import "{{ site.theme }}";
+
+.current {
+    color: palevioletred;
+    font-size:larger;
+    // font-stretch: expanded;
+}

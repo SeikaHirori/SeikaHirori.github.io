@@ -2,7 +2,7 @@
 layout: default
 title: about
 ---
-# About page
+# About
 
 meep hello. i come from planet stars. we got stars. trade?
 
