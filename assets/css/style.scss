@@ -3,8 +3,9 @@
 
 @import "{{ site.theme }}";
 
-.current {
-    color: palevioletred;
+.current_page {
+    // color: #E0AACC; // Candiate #1 for colours
+    color: #e4b2f7;
     font-size:larger;
     // font-stretch: expanded;
 }
