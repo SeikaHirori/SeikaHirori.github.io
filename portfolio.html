@@ -6,9 +6,11 @@ title: Projects
 <h2>Here are some highlights!</h2>
 
 <ul>
-    {% for item in site.projects %}
+    {% for project in site.projects %}
         <li>
-            <h1> {{project.title}} </h1>
+            <h2><a href="{{project.url}}">{{project.title}}</a></h2>
+            <h4>Tools: {{project.tools}}</h4>
+            {{project.excerpt}}
         </li>
     {% endfor %}
 </ul>
