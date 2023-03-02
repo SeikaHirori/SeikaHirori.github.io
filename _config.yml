@@ -10,7 +10,9 @@ plugins:
 # exclude: [_Docs, _Drafts,]
 
 collections:
-  authors:
+  # authors:
+  #   output: true
+  projects:
     output: true
 
 defaults:

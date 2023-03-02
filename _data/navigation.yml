@@ -2,8 +2,8 @@
 
 - name: Home
   link: /
-- name: Projects
-  link: /projects.html
+- name: Portfolio
+  link: /portfolio.html
 - name: Blog
   link: /blog.html
 - name: About
