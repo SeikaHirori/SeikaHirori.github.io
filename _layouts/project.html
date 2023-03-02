@@ -5,4 +5,9 @@ layout: default
 <h2>Tools: {{ page.tools }}</h2>
 <h3><a href="{{ page.repo }}">Repo</a></h3>
 
-{{content}}
+
+{% if content %}
+    {{content}}
+{% else %}
+    <p>Abstract and reflection coming soon!</p>
+{% endif %}

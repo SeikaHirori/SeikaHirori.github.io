@@ -1,9 +1,9 @@
 title: Seika Hirori's homepage
 
-description: Welcome to my site! Follow me as I progress through my programming journey :3
+description: Welcome! Follow my programming journey as I learn how to utilize all new tools and concepts :3
 
 # theme: minima
-remote_theme: pages-themes/tactile@v0.2.0
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 

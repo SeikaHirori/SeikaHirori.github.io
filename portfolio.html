@@ -10,7 +10,14 @@ title: Projects
         <li>
             <h2><a href="{{project.url}}">{{project.title}}</a></h2>
             <h4>Tools: {{project.tools}}</h4>
-            {{project.excerpt}}
+
+            <p>
+                {% if project.short_summary %}
+                    {{ project.short_summary}}
+                {% else %}
+                    {{ project.excerpt }}
+            </p>
+            {% endif %}
         </li>
     {% endfor %}
 </ul>

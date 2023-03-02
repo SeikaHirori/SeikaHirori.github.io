@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/style.css?v=457fa1cb9021cf1b5b4baed0e0caf5db486c8127">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+
+
+<!-- Setup Google Analytics -->
+<!-- 
+ -->
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+<nav>
+    
+        <a href="/" >
+            Home
+        </a>
+    
+        <a href="/portfolio.html" >
+            Portfolio
+        </a>
+    
+        <a href="/blog.html" >
+            Blog
+        </a>
+    
+        <a href="/about.html" >
+            About
+        </a>
+    
+</nav>
+
+<!-- end custom head snippets -->
+
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>じゃんけん (Janken) | Seika Hirori’s homepage</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="じゃんけん (Janken)" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Abstract: Using the specifications from Hacking with Swift, recreate the classic game: Rock, Paper, Scissors. In additional, add an extra win condition to score points. On a personally touch, support to switch to from English to the Japanese version (じゃんけん [janken]) was added. This was to see how multi-language support could be implemented. One limitation is that the current implementation of multiple languages might not scale well. Another limitation is due to current personal limited knowledge of SwiftUI, the SwiftUI toolkit has not been used to its fullest potential. Addition limitation is that tests were not written as the focus is learning the tool kit first. Lastly, the look of the UI could be improved." />
+<meta property="og:description" content="Abstract: Using the specifications from Hacking with Swift, recreate the classic game: Rock, Paper, Scissors. In additional, add an extra win condition to score points. On a personally touch, support to switch to from English to the Japanese version (じゃんけん [janken]) was added. This was to see how multi-language support could be implemented. One limitation is that the current implementation of multiple languages might not scale well. Another limitation is due to current personal limited knowledge of SwiftUI, the SwiftUI toolkit has not been used to its fullest potential. Addition limitation is that tests were not written as the focus is learning the tool kit first. Lastly, the look of the UI could be improved." />
+<link rel="canonical" href="http://localhost:4000/projects/0-reflection_janken.html" />
+<meta property="og:url" content="http://localhost:4000/projects/0-reflection_janken.html" />
+<meta property="og:site_name" content="Seika Hirori’s homepage" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-03-02T14:47:24-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="じゃんけん (Janken)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-02T14:47:24-08:00","datePublished":"2023-03-02T14:47:24-08:00","description":"Abstract: Using the specifications from Hacking with Swift, recreate the classic game: Rock, Paper, Scissors. In additional, add an extra win condition to score points. On a personally touch, support to switch to from English to the Japanese version (じゃんけん [janken]) was added. This was to see how multi-language support could be implemented. One limitation is that the current implementation of multiple languages might not scale well. Another limitation is due to current personal limited knowledge of SwiftUI, the SwiftUI toolkit has not been used to its fullest potential. Addition limitation is that tests were not written as the focus is learning the tool kit first. Lastly, the look of the UI could be improved.","headline":"じゃんけん (Janken)","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/projects/0-reflection_janken.html"},"url":"http://localhost:4000/projects/0-reflection_janken.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <a id="a-title" href="/">
+          <h1>Seika Hirori's homepage</h1>
+        </a>
+        <h2>Welcome! Follow my programming journey as I learn how to utilize all new tools and concepts :3</h2>
+
+        <section id="downloads">
+          
+          <a href="https://github.com/SeikaHirori/SeikaHirori.github.io" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1> じゃんけん (Janken) </h1>
+<h2>Tools: Swift, SwiftUI</h2>
+<h3><a href="https://github.com/SeikaHirori/janken_RockPaperScissors">Repo</a></h3>
+
+
+
+    <p>Abstract: Using the specifications from Hacking with Swift, recreate the
+classic game: Rock, Paper, Scissors. In additional, add an extra win
+condition to score points. On a personally touch, support to switch to
+from English to the Japanese version (じゃんけん [janken]) was added.
+This was to see how multi-language support could be implemented. One
+limitation is that the current implementation of multiple languages
+might not scale well. Another limitation is due to current personal
+limited knowledge of SwiftUI, the SwiftUI toolkit has not been used to
+its fullest potential. Addition limitation is that tests were not
+written as the focus is learning the tool kit first. Lastly, the look of
+the UI could be improved.</p>
+
+<p>------</p>
+
+<p>Highlights and Experience</p>
+
+<ul>
+  <li>
+    <p>The prompt from Hacking with Swift (HwS) was fairly straight
+forward!</p>
+
+    <ul>
+      <li>
+        <p>It’s implementing the classic game: Rock, Paper, Scissors (RPS)!</p>
+      </li>
+      <li>
+        <p>The game is knownじゃんけん (janken) in Japanese!</p>
+      </li>
+      <li>
+        <p>The prompt also stated another condition to gain points:
+purposely win or lose against the opponent based on the given
+visibly displayed prompt.</p>
+      </li>
+      <li>
+        <p>Applied a lot of tools from this lesson as they allow deeper
+customization: <a href="https://www.hackingwithswift.com/100/swiftui/23">https://www.hackingwithswift.com/100/swiftui/23</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>I wanted to add my own twist: Switching between the Japanese and
+English language! Personally, I am learning Japanese at the moment
+AND I remembered about Japan’s じゃんけん, and I wanted to see how I
+could implement switching between じゃんけん and RPS.</p>
+
+    <ul>
+      <li>For language switching, I used an Array to store the strings. I
+originally planned to use enums, but I wasn’t sure how to
+implement it when switching between English and Japanese
+language. A future implementation is discussed in the
+limitations section.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Limitations</p>
+
+<ul>
+  <li>
+    <p>Language switching wise</p>
+
+    <ul>
+      <li>For how I implemented the information being display, you have to
+be ATTENTIVE to make sure that those respective information are
+being updated whenever you toggle between English and Japanese.</li>
+    </ul>
+  </li>
+  <li>
+    <p>UI</p>
+
+    <ul>
+      <li>
+        <p>From my subjective take, the UI’s look could be drastically
+improved. I am still new to Swift UI’s toolset, so there are
+still endless amount of things I have not learned and used yet!
+I will go beyond Capsule() soon!</p>
+      </li>
+      <li>
+        <p>Ideally, I would like to switch to a different page when you get
+your final score.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code class="language-{=html}">&lt;!-- --&gt;
+</code></pre>
+<ul>
+  <li>
+    <p>Code design</p>
+
+    <ul>
+      <li>Placement of code is all over the place in my opinion. I think
+some of the logic (i.e. functions/ methods) could be placed in a
+separate file, but I will gain more insight as I gain more
+exposure to SwiftUI code designs.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Future improvements:</p>
+
+<ul>
+  <li>
+    <p>Improve look of UI</p>
+  </li>
+  <li>
+    <p>Change design of switching between multiple languages by using
+combination of enum and dictionary/HashMap.</p>
+
+    <ul>
+      <li>
+        <p>Idea suggested by: <a href="https://stackoverflow.com/a/43431251">https://stackoverflow.com/a/43431251</a></p>
+      </li>
+      <li>
+        <p>If I implement more than two languages, I will need change
+implementation of switching between languages. Currently, it
+switches between languages when a certain Bool variable is
+changed, so this can be changed to an enum, string, or int.
+Additional, the UI toggle could change to a dropdown menu.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>------</p>
+
+<p>Conclusion: It was a lovely experience overall for working on this
+second challenge project! It accumulated all the SwiftUI materials used
+in HwS’s Projects 1 to 3. It was a bit tough trying to find clear
+information on how SwiftUI’s tools worked since Apple’s official
+documentation (doc) only explains them on an abstract level. When
+compared to the doc for Rust, Apple’s lacks visual and example codes. As
+a result, I had to search through various websites for additional
+information. The project has multiple areas that could improved. As I am
+following HwS’s SwiftUI syllabus, I might be coming back to this project
+in the future to make improvements? If that doesn’t happen, I do want to
+comeback and implement some other features, such as a two-player Person
+vs Person (PvP) mode. This task will definitely require in-depth
+knowledge, but I do want to see how it is implemented! For now, I will
+proceed to the next lessons for HwS’s SwiftUI syllabus :D</p>
+
+
+      </section>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html> // OLD HTML v1
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>じゃんけん (Janken)</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <nav>
+    
+        <a href="/" >
+            Home
+        </a>
+    
+        <a href="/portfolio.html" >
+            Portfolio
+        </a>
+    
+        <a href="/blog.html" >
+            Blog
+        </a>
+    
+        <a href="/about.html" >
+            About
+        </a>
+    
+</nav>
+        <h1> じゃんけん (Janken) </h1>
+<h2>Tools: Swift, SwiftUI</h2>
+<h3><a href="https://github.com/SeikaHirori/janken_RockPaperScissors">Repo</a></h3>
+
+
+
+    <p>Abstract: Using the specifications from Hacking with Swift, recreate the
+classic game: Rock, Paper, Scissors. In additional, add an extra win
+condition to score points. On a personally touch, support to switch to
+from English to the Japanese version (じゃんけん [janken]) was added.
+This was to see how multi-language support could be implemented. One
+limitation is that the current implementation of multiple languages
+might not scale well. Another limitation is due to current personal
+limited knowledge of SwiftUI, the SwiftUI toolkit has not been used to
+its fullest potential. Addition limitation is that tests were not
+written as the focus is learning the tool kit first. Lastly, the look of
+the UI could be improved.</p>
+
+<p>------</p>
+
+<p>Highlights and Experience</p>
+
+<ul>
+  <li>
+    <p>The prompt from Hacking with Swift (HwS) was fairly straight
+forward!</p>
+
+    <ul>
+      <li>
+        <p>It’s implementing the classic game: Rock, Paper, Scissors (RPS)!</p>
+      </li>
+      <li>
+        <p>The game is knownじゃんけん (janken) in Japanese!</p>
+      </li>
+      <li>
+        <p>The prompt also stated another condition to gain points:
+purposely win or lose against the opponent based on the given
+visibly displayed prompt.</p>
+      </li>
+      <li>
+        <p>Applied a lot of tools from this lesson as they allow deeper
+customization: <a href="https://www.hackingwithswift.com/100/swiftui/23">https://www.hackingwithswift.com/100/swiftui/23</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>I wanted to add my own twist: Switching between the Japanese and
+English language! Personally, I am learning Japanese at the moment
+AND I remembered about Japan’s じゃんけん, and I wanted to see how I
+could implement switching between じゃんけん and RPS.</p>
+
+    <ul>
+      <li>For language switching, I used an Array to store the strings. I
+originally planned to use enums, but I wasn’t sure how to
+implement it when switching between English and Japanese
+language. A future implementation is discussed in the
+limitations section.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Limitations</p>
+
+<ul>
+  <li>
+    <p>Language switching wise</p>
+
+    <ul>
+      <li>For how I implemented the information being display, you have to
+be ATTENTIVE to make sure that those respective information are
+being updated whenever you toggle between English and Japanese.</li>
+    </ul>
+  </li>
+  <li>
+    <p>UI</p>
+
+    <ul>
+      <li>
+        <p>From my subjective take, the UI’s look could be drastically
+improved. I am still new to Swift UI’s toolset, so there are
+still endless amount of things I have not learned and used yet!
+I will go beyond Capsule() soon!</p>
+      </li>
+      <li>
+        <p>Ideally, I would like to switch to a different page when you get
+your final score.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<pre><code class="language-{=html}">&lt;!-- --&gt;
+</code></pre>
+<ul>
+  <li>
+    <p>Code design</p>
+
+    <ul>
+      <li>Placement of code is all over the place in my opinion. I think
+some of the logic (i.e. functions/ methods) could be placed in a
+separate file, but I will gain more insight as I gain more
+exposure to SwiftUI code designs.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Future improvements:</p>
+
+<ul>
+  <li>
+    <p>Improve look of UI</p>
+  </li>
+  <li>
+    <p>Change design of switching between multiple languages by using
+combination of enum and dictionary/HashMap.</p>
+
+    <ul>
+      <li>
+        <p>Idea suggested by: <a href="https://stackoverflow.com/a/43431251">https://stackoverflow.com/a/43431251</a></p>
+      </li>
+      <li>
+        <p>If I implement more than two languages, I will need change
+implementation of switching between languages. Currently, it
+switches between languages when a certain Bool variable is
+changed, so this can be changed to an enum, string, or int.
+Additional, the UI toggle could change to a dropdown menu.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>------</p>
+
+<p>Conclusion: It was a lovely experience overall for working on this
+second challenge project! It accumulated all the SwiftUI materials used
+in HwS’s Projects 1 to 3. It was a bit tough trying to find clear
+information on how SwiftUI’s tools worked since Apple’s official
+documentation (doc) only explains them on an abstract level. When
+compared to the doc for Rust, Apple’s lacks visual and example codes. As
+a result, I had to search through various websites for additional
+information. The project has multiple areas that could improved. As I am
+following HwS’s SwiftUI syllabus, I might be coming back to this project
+in the future to make improvements? If that doesn’t happen, I do want to
+comeback and implement some other features, such as a two-player Person
+vs Person (PvP) mode. This task will definitely require in-depth
+knowledge, but I do want to see how it is implemented! For now, I will
+proceed to the next lessons for HwS’s SwiftUI syllabus :D</p>
+
+
+    </body>
+</html> -->
