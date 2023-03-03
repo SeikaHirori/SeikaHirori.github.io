@@ -19,6 +19,9 @@ blog:
 <!-- Link to project specifications/ guidelines if it is used. -->
 specifications: 
 
+<!-- Project id that could be used to reference posts from blog -->
+project_id:
+
 <!-- Provide an EXTREMEMLY eye-catcher summary; this is viewed on Portfolio.html page. If left empty, it will automatically grab an excerpt. -->
 short_summary:
 
