@@ -3,8 +3,8 @@
 - name: Home
   link: /
 - name: Portfolio
-  link: /portfolio.html
+  link: /subpages/portfolio.html
 - name: Blog
-  link: /blog.html
+  link: /subpages/blog.html
 - name: About
-  link: /about.html
+  link: /subpages/about.html

@@ -13,25 +13,16 @@ plugins:
 collections:
   projects:
     output: true
+  subpages:
+    output: true
   unique_pages:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "unique_pages"
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
   - scope:
       path: ""
       type: "posts"
@@ -39,5 +30,16 @@ defaults:
       layout: "post"
   - scope:
       path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "subpages"
+    values:
+      layout: "default"  
+  - scope:
+      path: ""
+      type: "unique_pages"
     values:
       layout: "default"
