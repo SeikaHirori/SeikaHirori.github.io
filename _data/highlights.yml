@@ -1,0 +1,10 @@
+## Template
+# - name:
+#   link:
+
+- name: My iOS Journey
+  link: /unique_pages/ios_journey.html
+
+- name: Learning Materials for my self-taught journey!
+  link: /unique_pages/learning.html
+

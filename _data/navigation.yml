@@ -6,5 +6,7 @@
   link: /subpages/portfolio.html
 - name: Blog
   link: /subpages/blog.html
+- name: Highlights
+  link: /subpages/highlights.html
 - name: About
   link: /subpages/about.html

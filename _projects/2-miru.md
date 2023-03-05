@@ -1,8 +1,11 @@
 ---
 layout: project
-title: Miru
+title: Miru 
 tools: Python, Django, HTML
-repo: https://github.com/SeikaHirori/miru
-blog:
-specifications:
+repo_link: https://github.com/SeikaHirori/miru 
+blog_link: 
+specifications: 
+project_id: 
+short_summary: 
 ---
+

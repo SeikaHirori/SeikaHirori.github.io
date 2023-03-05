@@ -1,0 +1,9 @@
+<ul>
+    {% for item in site.data.highlights %} 
+        <li>
+            <a href="{{ item.link }}">
+                {{ item.name}}
+            </a>
+        </li>
+    {% endfor %}
+</ul>

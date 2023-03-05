@@ -1,8 +1,8 @@
 ---
 layout: default
-title: about
+title: About
 ---
-# About
+# {{ page.title }}
 
 meep hello. i come from planet stars. we got stars. trade?
 

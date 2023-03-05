@@ -1,6 +1,18 @@
-<!--- front matter templete --->
-
 ---
+layout: project
+title:
+tools: 
+repo_link: 
+blog_link:
+specifications: 
+project_id:
+short_summary:
+---
+
+
+
+<!--- :3 front matter templete INFORMATION :3 --->
+
 <!-- Default to using layout: project -->
 layout: project
 
@@ -11,10 +23,10 @@ title:
 tools: 
 
 <!-- Link to project's GitHub repo -->
-repo: 
+repo_link: 
 
 <!-- Link to project's blog, which is usually a reflection post. -->
-blog:
+blog_link:
 
 <!-- Link to project specifications/ guidelines if it is used. -->
 specifications: 

@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<h1>Latest Posts</h1>
+# {{ page.title }}
 
 <ul>
     {% for post in site.posts %}
