@@ -13,8 +13,15 @@ plugins:
 collections:
   projects:
     output: true
+  unique_pages:
+    output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "unique_pages"
+    values:
+      layout: "default"
   - scope:
       path: ""
       type: "projects"
