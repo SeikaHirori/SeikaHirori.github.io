@@ -12,5 +12,6 @@ title: Blog
             {{ post.date | date_to_string }}
             {{ post.excerpt }}
         </li>
+        <br>
     {% endfor %}
 </ul>

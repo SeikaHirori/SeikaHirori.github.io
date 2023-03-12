@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Breathe a New
-date: '2022-08-19T11:52:00.001-07:00'
 repo: 
 project_id: 
 tags:
@@ -11,10 +10,8 @@ tags:
 
 Hello there, and welcome to my blog!
 
-I am a human being from planet Earth who is aspiring to be a Software
-Engineer. I am coming from a non-traditional background, so this will be
-an interesting chapter of my life. There will be more details about why
-I am pursuing software engineering in a separate post.
+I am a human being from planet Earth who is aspiring to be a Software Engineer. I am coming from a non-traditional background, so this will be
+an interesting chapter of my life. There will be more details about why I am pursuing software engineering in a separate post.
 
 What is the purpose of starting this blog on Medium? The primary focus
 of the blog will be about things I found interesting while I'm learning.
@@ -26,8 +23,8 @@ will be fun to share the stuff I've been learning. This inspiration
 stemmed from my past endeavors. I documented my journey with reflection
 of what I could improve on, but also what I did well too. This general
 "reflection time" was inspired by the Pokemon VGC content creator,
-[[Aaron "Cybertron"
-Zhang]{.underline}](https://www.youtube.com/c/CybertronVGC)! This would
+[Aaron "Cybertron"
+Zhang](https://www.youtube.com/c/CybertronVGC)! This would
 be handy, and having a reason to write is nice to stretch my writing
 muscles.
 

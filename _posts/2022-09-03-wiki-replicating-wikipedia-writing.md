@@ -1,21 +1,20 @@
 ---
 layout: post
 title: Wiki | Replicating Wikipedia & Writing Front-end Tests
-date: '2022-09-03T19:01:00.006-07:00'
 repo: 
 project_id: 
 tags:
 - CS50w
 ---
 
-**Repo**:
-[[https://github.com/WaToArt/replicate-wiki]{.underline}](https://github.com/WaToArt/replicate-wiki)
-
 **Abstract**: Replicate Wikipedia by using Django, MarkDown2, and HTML
 according to the specifications. Focused on creating views.py and other
 things within the Django framework. For writing tests, it was a
 self-imposed journey to figure out how to test Front-end by experting
 with Selenium, Pylenium, and Playwright.
+
+**Repo**:
+[[https://github.com/WaToArt/replicate-wiki]{.underline}](https://github.com/WaToArt/replicate-wiki)
 
 **Specifications**:
 [[https://cs50.harvard.edu/web/2020/projects/1/wiki/]{.underline}](https://cs50.harvard.edu/web/2020/projects/1/wiki/)

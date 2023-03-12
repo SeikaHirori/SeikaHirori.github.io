@@ -1,74 +1,70 @@
 ---
 layout: post
 title: Tic-Tac-Toe with JavaFX
-date: '2022-08-19T11:55:00.004-07:00'
 tags: 
     - Imported
 ---
 
 
+
+
+**Abstract**: Create the Tic-Tac-Toe game utilizing JavaFX as the
+GUI/Front-end. Learn and implement 'event-based programming'. 
+
 [Exercise: [[Tic-Tac-Toe (3
-parts)]{.underline}](https://open.spotify.com/track/1GKx2QlBo2IeXK9ecJniQy?si=d1c8865339044a6b)]{.mark}
+parts)]](https://open.spotify.com/track/1GKx2QlBo2IeXK9ecJniQy?si=d1c8865339044a6b)]
 
-[Abstract: Create the Tic-Tac-Toe game utilizing JavaFX as the
-GUI/Front-end. Learn and implement 'event-based programming'. The
-program works,]{.mark}
-
-[\_\_\_\_\_]{.mark}
-
-[]{.mark}
-
-[- Thought process:]{.mark}
+[- Thought process:]
 
 [- I wanted to use multiple classes, but I was overwhelmed by the huge
 amount of possible approaches. I knew that I wanted to use multiple past
 concepts and ideas (i.e. multidimensional array), but I was not sure how
-to incorporate it with JavaFX.]{.mark}
+to incorporate it with JavaFX.]
 
 [- It took a while to learn how to utilize 'event-based programming',
-but it was very powerful when I learned how it worked.]{.mark}
+but it was very powerful when I learned how it worked.]
 
 [- Most of the general components came down as I wrote it. Had I
 realized these ideas earlier, they would have been separated into their
 own classes. Since the ideas came towards the end of the project, it was
-difficult to separate some of these ideas.]{.mark}
+difficult to separate some of these ideas.]
 
 [- Trying to break down the steps was hard. Looking at TMC\'s code, the
-way they went about it makes sense.]{.mark}
+way they went about it makes sense.]
 
 [- I wanted to refactor, but I didn\'t want to do so after looking at
-TMC\'s code. If I did, my approach would be similar to TMC\'s.]{.mark}
+TMC\'s code. If I did, my approach would be similar to TMC\'s.]
 
-[- Future:]{.mark}
+[- Future:]
 
 [- If I were to rework this right now from scratch, the first thing is
 to migrate basic code and functions into a logic class (i.e. turn order,
 integrating int\[\]\[\]). I originally had done this BUT TMC didn't like
 this code, but centering 'Turn:'. I had used HBox as it worked for my
-needs.]{.mark}
+needs.]
 
 [- In the far future, I do want to approach this application whenever I
 learn more concepts and use a different programming language and
-tools.]{.mark}
+tools.]
 
 [- NOTEWORTHY: using '.isBlank' worked locally, but TMC didn\'t want
 that. In order to maintain the consistent button size, the workaround
 used both \'.replaceAll(\" \", \"\") and '.isEmpty' to achieve the same
-results.]{.mark}
+results.]
 
-[- Missing features:]{.mark}
+[- Missing features:]
 
-[- Return feedback to users on who won OR was a tie game.]{.mark}
+[- Return feedback to users on who won OR was a tie game.]
 
 > [- Was unsure how to count up the tallies with only buttons, but using
-> a multidimensional array would suffice.]{.mark}
+> a multidimensional array would suffice.]
 >
-> [- Show a visual of which buttons gave the winner the victory.]{.mark}
+> [- Show a visual of which buttons gave the winner the victory.]
 >
 > [- Wanted to use array, but unsure how to incorporate it where it
-> works together with the buttons in the application.]{.mark}
+> works together with the buttons in the application.]
 
-[- No 'restart ' and 'quit/close' program function.]{.mark}
+[- No 'restart ' and 'quit/close' program function.]
 
 > [- Option: once the game finishes, have the last button change to
-> another subview with a prompt to start a new session.]{.mark}
+> another subview with a prompt to start a new session.]

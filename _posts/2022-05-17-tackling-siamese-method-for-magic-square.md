@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Tackling Siamese Method for Magic Square
-date: '2022-08-19T11:53:00.005-07:00'
 repo: 
 project_id: 
 tags:
@@ -9,26 +8,18 @@ tags:
 
 ---
 
-[[Exercise: Part 4 of \"Programming exercise: Magic square (4
-parts)]{.underline}](https://java-programming.mooc.fi/part-12/4-multidimensional-data)
 
-**[Abstract]{.underline}**:
 
-A "while" loop is used for implementing the Siamese method algorithm.
-For the loop, "continue" was not used at any point as it will cause an
-infinite loop. Various "if" statements were used to ensure that the
-program is following the rules of the Siamese method. The most difficult
-part to figure out was Lines 36 - 38, as it was difficult to figure out
-when to move downwards if both the "X" and "Y" coordinates are out of
-bounds.
+**Abstract**: A "while" loop is used for implementing the Siamese method algorithm. For the loop, "continue" was not used at any point as it will cause an
+infinite loop. Various "if" statements were used to ensure that the program is following the rules of the Siamese method. The most difficult part to figure out was Lines 36 - 38, as it was difficult to figure out when to move downwards if both the "X" and "Y" coordinates are out of bounds.
 
 ---
 
-**[Detailed Version]{.underline}**:
+**[Detailed Version]**:
 
 The fourth part of the exercise was interesting as it wanted to
 implement the [[Siamese method
-algorithm]{.underline}](https://en.wikipedia.org/wiki/Siamese_method).
+algorithm]](https://en.wikipedia.org/wiki/Siamese_method).
 The first 3 parts did not take too long to solve, but the fourth part
 took about 6-8 hours to solve. The amount of approachable options were
 vast, BUT that large amount makes it difficult to figure out "okay,
@@ -155,8 +146,8 @@ The takeaways:
         > increase my personal workflow. I think this might suit my
         > nature of "how can I break this and how far can I push the
         > boundaries" approach that I utilize when I play video games. A
-        > [[course]{.underline} is provided by [MOOC.fi
-        > here]{.underline}](https://tdd.mooc.fi/).
+        > [[course] is provided by [MOOC.fi
+        > here]](https://tdd.mooc.fi/).
 
 -   Regardless of how "simple" the implementation might seem, it's still
     > best practice to execute the action of a code one at a time. When

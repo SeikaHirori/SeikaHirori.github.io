@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Why Full-Stack Now?
-date: '2022-08-20T20:29:00.000-07:00'
 repo: 
 project_id: 
 tags: 
     - Journal
 ---
 
-**Abstract**: O yeah... PWAs exist... and what's this? Full-stack
-elements fulfills my needs for personal projects? I am interested :3
+**Abstract**: Oh yeah... PWAs exist... and what's this? Full-stack elements fulfills my needs for personal projects? I am interested :3
 
 I did not expect to set my sights on Full-Stack Development at all. I
 thoroughly enjoyed coding back-end via Python and Java, but my previous

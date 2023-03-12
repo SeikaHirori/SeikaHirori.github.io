@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Personal Experience with Java Programming (MOOC.fi)
-date: '2022-08-19T12:05:00.001-07:00'
 repo: 
 project_id: 
 tags:
@@ -10,10 +9,8 @@ tags:
 ---
 
 
-TL;DR:
-
-The Java Programming (MOOC.fi) course is great for beginners who started
-their self-taught programming journey! There were some hiccups, but that
+**Abstract**: The Java Programming (MOOC.fi) course is great for beginners who started their self-taught programming journey! 
+There were some hiccups, but that
 did not deter my progress through the course. The experience was an
 incredible kick off to my self-taught programming journey.
 

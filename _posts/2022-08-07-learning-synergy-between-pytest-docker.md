@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 'Learning: The synergy between Pytest, Docker, and Jenkins'
-date: '2022-08-19T12:07:00.001-07:00'
 repo: 
 project_id: 
 tags:
 - Imported
 ---
 
-Abstract: Learned the utility of Docker and Jenkins, and how to combine
+**Abstract**: Learned the utility of Docker and Jenkins, and how to combine
 them with pytest to automate testing for personal repos. Resources used/
 mentioned are listed in the "documentation" folder in the repo. This is
 a shorter one, but it will improve my workflow.
