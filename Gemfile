@@ -7,6 +7,7 @@ gem 'webrick', '~> 1.3', '>= 1.3.1'
 gem 'github-pages', group: :jekyll_plugins
 
 # For Blogger import
+gem "jekyll-sass-converter", "1.5.2"
 gem "jekyll-import", "~> 0.21.0"
 gem "rexml", "~> 3.2"
 gem "safe_yaml", "~> 1.0"
