@@ -5,3 +5,5 @@
 
 - [ ] Write short blurb for homepage
 - [ ] Write "About Me"
+- [ ] Move highlight portfolio into Home page
+- [ ] Update Portfolio page with latest projects
