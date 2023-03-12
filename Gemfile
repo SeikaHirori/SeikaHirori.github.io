@@ -5,3 +5,5 @@ source "https://rubygems.org"
 
 gem 'webrick', '~> 1.3', '>= 1.3.1'
 gem 'github-pages', group: :jekyll_plugins
+
+gem "jekyll-import", "~> 0.21.0"
