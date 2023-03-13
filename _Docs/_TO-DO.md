@@ -3,9 +3,14 @@
     - Each link should have more space
     - I think it's hard to tell where the link starts and ends since the underline blends all them in right now.
 
-- [ ] Write short blurb for homepage
+- Homepage: 
+    - Layout of page:
+        - [ ] Write short blurb for homepage
+        - [ ] Portfolio Highlights
 - [ ] Write "About Me"
-- [ ] Move highlight portfolio into Home page
+- [ ] Create separate file that contain highlights of portfolio
+    - This will be used on Home page and Portfolio's main page
+    - Will contain about 3 to 4 highlights
 - [ ] Update Portfolio page with latest projects
 - Blog:
     - [x] post's execerpt needs to shorter.
