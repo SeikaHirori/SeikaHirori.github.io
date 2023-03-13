@@ -29,6 +29,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      category: "Hello, i lost my wallet"
+  - scope:
+      path: "_posts/programming"
+      type: "posts"
+    values:
+      layout: "post_programming"
+      category: "Programming"
   - scope:
       path: ""
       type: "projects"

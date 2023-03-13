@@ -1,15 +1,16 @@
 ---
-layout: post
+layout: post_programming
 title: Breathe a New
 repo: 
 project_id: 
+category: programming
 tags:
 - Imported
 ---
 
 Hello there, and welcome to my blog!
 
-I am an aspiring Software Engineer. <!--more--> I am coming from a non-traditional background, so this will be an interesting chapter of my life. There will be more details about why I am pursuing software engineering in a separate post.
+I am an aspiring Software Engineer. I am coming from a non-traditional background, so this will be an interesting chapter of my life. There will be more details about why I am pursuing software engineering in a separate post.
 
 What is the purpose of starting this blog on Medium? The primary focus
 of the blog will be about things I found interesting while I'm learning.
@@ -36,5 +37,4 @@ skill sets. If I were to do something for YouTube in the future, it
 would not be programming-related. I want YouTube to be my avenue for
 different projects to experiment to itch my artistic side. :3
 
-I am ecstatic to share my journey with all of y'all! It will be a tough
-experience, but I am looking forward to this current chapter of life. :D
+I am ecstatic to share my journey with all of y'all! It will be a tough experience, but I am looking forward to this current chapter of life. :D
