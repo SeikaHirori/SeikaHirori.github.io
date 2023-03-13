@@ -12,9 +12,10 @@
     - [ ] create a tag/ subpage that contains the following categories AND explaination purpose of the category
         - ~~ https://jekyllrb.com/docs/step-by-step/09-collections/ ~~
             - ~~Instructions from this link could be applied to creating separate cateogories.~~
-        - Following these instructions instead:
+        - [x] Following these instructions instead:
             - https://stackoverflow.com/a/14583346
             - https://www.garron.me/en/blog/multi-blog-site-jekyll.html
+        - Still need to create custom page for each category with explaination.
         - Example categories:
             - Programming/ Coding journey
             - Project Reflection
@@ -22,7 +23,7 @@
                 - "shower thoughts" vibe
                 - Example topics:
                     - Living without a smartphone for two weeks
-            - Observation posts
+            - Life Observation posts
                 - Example topics:
                     - iOS/ iPadOS interactions with Wireless earbuds and how certain earbuds's lowest volume 
             - Resources:
