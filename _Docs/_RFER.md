@@ -32,3 +32,7 @@
 
 - RFER #9 | How to handle an empty content
     - https://stackoverflow.com/a/27326291
+
+- RFER #10 | How to categorize blog posts:
+    - https://stackoverflow.com/a/14583346
+    - https://www.garron.me/Qen/blog/multi-blog-site-jekyll.html

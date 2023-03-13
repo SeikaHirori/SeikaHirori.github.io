@@ -6,12 +6,8 @@ layout: default
 <h3>
     {{ page.date | date_to_string }}
 </h3>
-<h4>Category: <a href="">{{ page.category }}</a></h4>
-<h4>
-    {% if page.repo %}
-        Repo: <a href="{{ page.repo }}">{{ page.repo }}</a>
-    {% endif %}
-</h4>
+<h4>Category: <a href="">{{ page.categories }}</a></h4>
+<h5>Tags: {{ page.tags | join: ", " }} </h5>
 
 {{content}}
 

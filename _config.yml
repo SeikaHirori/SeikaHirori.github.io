@@ -29,7 +29,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      category: "Hello, i lost my wallet"
+      # category: "ALL"
   - scope:
       path: "_posts/programming"
       type: "posts"

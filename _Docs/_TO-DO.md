@@ -10,8 +10,11 @@
 - Blog:
     - [x] post's execerpt needs to shorter.
     - [ ] create a tag/ subpage that contains the following categories AND explaination purpose of the category
-        - https://jekyllrb.com/docs/step-by-step/09-collections/
-            - Instructions from this link could be applied to creating separate cateogories.
+        - ~~ https://jekyllrb.com/docs/step-by-step/09-collections/ ~~
+            - ~~Instructions from this link could be applied to creating separate cateogories.~~
+        - Following these instructions instead:
+            - https://stackoverflow.com/a/14583346
+            - https://www.garron.me/en/blog/multi-blog-site-jekyll.html
         - Example categories:
             - Programming/ Coding journey
             - Project Reflection
