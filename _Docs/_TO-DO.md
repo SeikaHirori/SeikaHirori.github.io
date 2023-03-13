@@ -7,3 +7,4 @@
 - [ ] Write "About Me"
 - [ ] Move highlight portfolio into Home page
 - [ ] Update Portfolio page with latest projects
+- [ ] Blog: post's execerpt needs to shorter.
