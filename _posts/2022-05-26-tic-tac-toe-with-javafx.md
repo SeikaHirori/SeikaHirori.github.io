@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Tic-Tac-Toe with JavaFX
-tags: 
+repo: 
+project_id: 
+tags:
     - Imported
 ---
 
@@ -12,7 +14,7 @@ tags:
 GUI/Front-end. Learn and implement 'event-based programming'. 
 
 [Exercise: [[Tic-Tac-Toe (3
-parts)]](https://open.spotify.com/track/1GKx2QlBo2IeXK9ecJniQy?si=d1c8865339044a6b)]
+parts)]]()]
 
 [- Thought process:]
 

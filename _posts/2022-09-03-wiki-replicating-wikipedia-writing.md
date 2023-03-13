@@ -7,11 +7,7 @@ tags:
 - CS50w
 ---
 
-**Abstract**: Replicate Wikipedia by using Django, MarkDown2, and HTML
-according to the specifications. Focused on creating views.py and other
-things within the Django framework. For writing tests, it was a
-self-imposed journey to figure out how to test Front-end by experting
-with Selenium, Pylenium, and Playwright.
+**Abstract**: Replicate Wikipedia by using Django, MarkDown2, and HTML according to the specifications. <!--more--> Focused on creating views.py and other things within the Django framework. For writing tests, it was a self-imposed journey to figure out how to test Front-end by experting with Selenium, Pylenium, and Playwright.
 
 **Repo**:
 [[https://github.com/WaToArt/replicate-wiki]{.underline}](https://github.com/WaToArt/replicate-wiki)

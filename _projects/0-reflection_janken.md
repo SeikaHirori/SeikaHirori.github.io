@@ -5,7 +5,7 @@ tools: Swift, SwiftUI
 repo: https://github.com/SeikaHirori/janken_RockPaperScissors
 blog:
 specifications: https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
-project_id: janken_001
+project_id: janken
 
 short_summary: Implement Janken (A.K.A. Rock, Papers, Scissors) with Japanese and English language support.
 ---
@@ -50,7 +50,7 @@ Highlights and Experience
         language. A future implementation is discussed in the
         limitations section.
 
-Limitations
+Limitations:
 
 -   Language switching wise
 
@@ -68,9 +68,6 @@ Limitations
     -   Ideally, I would like to switch to a different page when you get
         your final score.
 
-```{=html}
-<!-- -->
-```
 -   Code design
 
     -   Placement of code is all over the place in my opinion. I think

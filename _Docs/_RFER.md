@@ -24,3 +24,11 @@
 
 - RFER #7 | Limiting amount of words for post.excerpt
     - https://gist.github.com/benbalter/5555369
+    - This is to limit the amount of words when using "post.excerpt". Additionally, the link above reduces the boilerplate code (it is treated similarly to a global variable when in the _config.yml file) so it doesn't need to constantly include the variable in the front matter. 
+
+- RFER #8 | Displaying posts that meets certain critera
+    - https://talk.jekyllrb.com/t/display-posts-with-a-particular-variable/7429/2
+    - This is to be used for portfolio page, where each project's should grab it's correlating blog post's excerpt.
+
+- RFER #9 | How to handle an empty content
+    - https://stackoverflow.com/a/27326291

@@ -7,7 +7,7 @@ tags:
     - Journal
 ---
 
-**Abstract**: Oh yeah... PWAs exist... and what's this? Full-stack elements fulfills my needs for personal projects? I am interested :3
+**Abstract**: Oh yeah... PWAs exist... and what's this? Full-stack elements fulfills my needs for personal projects? I am interested :3 <!--more-->
 
 I did not expect to set my sights on Full-Stack Development at all. I
 thoroughly enjoyed coding back-end via Python and Java, but my previous

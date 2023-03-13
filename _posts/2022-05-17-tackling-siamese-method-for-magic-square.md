@@ -10,8 +10,7 @@ tags:
 
 
 
-**Abstract**: A "while" loop is used for implementing the Siamese method algorithm. For the loop, "continue" was not used at any point as it will cause an
-infinite loop. Various "if" statements were used to ensure that the program is following the rules of the Siamese method. The most difficult part to figure out was Lines 36 - 38, as it was difficult to figure out when to move downwards if both the "X" and "Y" coordinates are out of bounds.
+**Abstract**: A "while" loop is used for implementing the Siamese method algorithm.  For the loop, "continue" was not used at any point as it will cause an infinite loop. Various "if" statements were used to ensure that the program is following the rules of the Siamese method.  The most difficult part to figure out was Lines 36 - 38, as it was difficult to figure out when to move downwards if both the "X" and "Y" coordinates are out of bounds.
 
 ---
 

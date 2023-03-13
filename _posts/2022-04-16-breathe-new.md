@@ -5,13 +5,11 @@ repo:
 project_id: 
 tags:
 - Imported
-
 ---
 
 Hello there, and welcome to my blog!
 
-I am a human being from planet Earth who is aspiring to be a Software Engineer. I am coming from a non-traditional background, so this will be
-an interesting chapter of my life. There will be more details about why I am pursuing software engineering in a separate post.
+I am an aspiring Software Engineer. <!--more--> I am coming from a non-traditional background, so this will be an interesting chapter of my life. There will be more details about why I am pursuing software engineering in a separate post.
 
 What is the purpose of starting this blog on Medium? The primary focus
 of the blog will be about things I found interesting while I'm learning.

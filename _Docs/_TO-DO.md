@@ -7,4 +7,17 @@
 - [ ] Write "About Me"
 - [ ] Move highlight portfolio into Home page
 - [ ] Update Portfolio page with latest projects
-- [ ] Blog: post's execerpt needs to shorter.
+- Blog:
+    - [x] post's execerpt needs to shorter.
+    - [ ] create a tag/ subpage that contains the following categories AND explaination purpose of the category:
+        - Programming/ Coding journey
+        - Project Reflection
+        - Fun posts
+            - "shower thoughts" vibe
+            - Example topics:
+                - Living without a smartphone for two weeks
+        - Observation posts
+            - Example topics:
+                - iOS/ iPadOS interactions with Wireless earbuds and how certain earbuds's lowest volume 
+        - Resources:
+            - Learning courses, books, and other information I have used on my learning journey.
