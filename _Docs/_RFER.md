@@ -21,3 +21,6 @@
 - RFER #6 - How to use remote theme
     - Link: https://github.com/orgs/community/discussions/21543#discussioncomment-3233635
     - Import into "assets/css/style.scss"
+
+- RFER #7 | Limiting amount of words for post.excerpt
+    - https://gist.github.com/benbalter/5555369
