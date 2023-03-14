@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Miru 
-tools: Python, Django, HTML
+tech: Python, Django, HTML
 repo_link: https://github.com/SeikaHirori/miru 
 blog_link: 
 specifications: 

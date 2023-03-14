@@ -1,8 +1,16 @@
 ---
 layout: default
 title: Projects
+last_updated: 2023-03-14
 ---
-<h1> {{ page.title }}</h1>
+<div>
+    <h1> {{ page.title }}</h1>
+    <h5>Last updated: {{ page.last_updated | date_to_string }}</h5>
+    <p> My GitHub repository contains my all of my latest projects, which can be here: <a href="https://github.com/SeikaHirori">https://github.com/SeikaHirori</a>
+    </p>
+</div>
+<br>
+
 <div>
     <h2>Here are some highlights!</h2>
     {% include portfolio_showcase.html %}
