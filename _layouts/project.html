@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+
+
 <div>
     <h1> {{ page.title }} </h1>
     <h3>Tech: {{ page.tech }}</h3>
@@ -10,10 +13,13 @@ layout: default
 <br>
 
 <div>
-    
+    {% assign short_summary = page.short_summary | strip_newlines %}
+    {% if short_summary == "" %}
+        {% assign short_summary = "໒(⊙ᴗ⊙)७✎▤" %}
+    {% endif %}
 
     <h2>Summary:</h2>
-    <p>{{ page.short_summary }}</p>
+    <p>{{ short_summary }}</p>
 </div>
 <br>
 
@@ -21,22 +27,29 @@ layout: default
 <h2>Reflection Posts:</h2>
     <ul> 
         {% assign posts = site.posts | where_exp: 'post', 'post.project_id == page.project_id' %}
-    
-        {% for post in posts %}
-        <li>
-            <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
-            
-        </li>
-    
-        {% endfor %}
+
+        {% assign post_size = posts | size %}
+        {% if post_size > 0 %}
+            {% for post in posts %}
+            <li>
+                <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+            </li>
+            {% endfor %}
+        {% else %}
+            <li>
+                "໒(⊙ᴗ⊙)७✎▤"
+            </li>
+        {% endif %}
     </ul>
 </div>
 <br>
 
+<div>
+    {% assign content = content | strip_newlines %}
+    {% if content == "" %}
+        <p>໒(⊙ᴗ⊙)७✎▤</p>
+    {% else %}
+        {{ content }}
+    {% endif %}
+</div>
 
-{% assign content = content | strip_newlines %}
-{% if content == "" %}
-    <p>໒(⊙ᴗ⊙)७✎▤</p>
-{% else %}
-    {{ content }}
-{% endif %}
