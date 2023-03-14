@@ -5,7 +5,7 @@ layout: default
 <h3>
     {{ page.date | date_to_string }}
 </h3>
-<h4>Category: <a href="">{{ page.categories | join: "_" | replace: "_", " " }}</a></h4>
+<h4>Category: <a href="{{ page.categories }}">{{ page.categories | join: "_" | replace: "_", " " }}</a></h4>
 <h5>Tags: {{ page.tags | join: ", " }} </h5>
 
 {{content}}

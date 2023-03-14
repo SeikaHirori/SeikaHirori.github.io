@@ -3,7 +3,7 @@
     - Each link should have more space
     - I think it's hard to tell where the link starts and ends since the underline blends all them in right now.
 
-- Homepage: 
+- Home page: 
     - Layout of page:
         - [ ] Write short blurb for homepage
         - [ ] Portfolio Highlights
@@ -11,8 +11,11 @@
 - [ ] Create separate file that contain highlights of portfolio
     - This will be used on Home page and Portfolio's main page
     - Will contain about 3 to 4 highlights
+        - Follow these instructions:
+            - https://jekyllrb.com/docs/includes/
+- Portfolio page
 - [ ] Update Portfolio page with latest projects
-- Blog:
+- Blog page:
     - [x] post's execerpt needs to shorter.
     - [ ] create a tag/ subpage that contains the following categories AND explaination purpose of the category
         - ~~ https://jekyllrb.com/docs/step-by-step/09-collections/ ~~
@@ -33,3 +36,10 @@
                     - iOS/ iPadOS interactions with Wireless earbuds and how certain earbuds's lowest volume 
             - Resources:
                 - Learning courses, books, and other information I have used on my learning journey.
+
+- About Me page:
+    - Longer blurb about...
+        - Background of life
+        - My "how" and "why" into programming
+        - My goals/ objectve for this new career
+        - My current hobbies :3 
