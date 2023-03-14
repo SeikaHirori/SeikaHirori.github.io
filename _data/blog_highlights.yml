@@ -1,0 +1,13 @@
+### Template
+# - name:
+#   page_link:
+
+### Purpose
+# Displayed highlighted blog posts
+
+- name: My iOS Journey
+  page_link: /unique_pages/ios_journey.html
+
+- name: Learning Materials for my self-taught journey!
+  page_link: /unique_pages/learning.html
+

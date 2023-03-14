@@ -3,22 +3,46 @@ layout: default
 title: Projects
 ---
 <h1> {{ page.title }}</h1>
-<h2>Here are some highlights!</h2>
+<div>
+    <h2>Here are some highlights!</h2>
+    {% include portfolio_showcase.html %}
+</div>
+<br>
 
+<div>
+<h2> Here are some other projects :3 </h2>
 <ul>
     {% for project in site.projects %}
-        <li>
-            <h2><a href="{{project.url}}">{{project.title}}</a></h2>
-            <h4>Tools: {{project.tools}}</h4>
-            <p>
-                {% if project.short_summary %}
-                    {{ project.short_summary}}
-                {% else %}
-                    {{ project.excerpt }}
-            </p>
+        {% assign is_in_showcase = false %}
+        {% for showcase in site.data.portfolio_showcase %}
+            {% if showcase.project_id == project.project_id %}
+                {% assign is_in_showcase = true %}
+                {% break %}
             {% endif %}
-        </li>
+        {% endfor %}
+
+        {% if is_in_showcase %}
+            {% continue %}
+        {% else %}
+            <li>
+                <h2><a href="{{project.url}}">{{project.title}}</a></h2>
+                <h4> Tech: {{project.tools}}</h4>
+                <p>
+                    {% if project.short_summary %}
+                        {{ project.short_summary}}
+                    {% else %}
+                        {{ project.excerpt }}
+                    {% endif %}
+                </p>
+            </li>
+        {% endif %}
+
+        
     {% endfor %}
 </ul>
+</div>
+<br>
 
-<h3>If you like to view more of my projects, they can be viewed <a href="https://github.com/SeikaHirori?tab=repositories">here.</a></h3>
+<div>
+    <h3>If you like to view more of my projects, they can be viewed <a href="https://github.com/SeikaHirori?tab=repositories">here.</a></h3>
+</div>

@@ -1,0 +1,10 @@
+
+<ul>
+    {% for item in site.data.portfolio_showcase %}
+        <li>
+            <h2><a href=" {{ item.portfolio_page_link }} ">{{ item.name }}</a></h2>
+            <h4> Tech: {{ item.tech }} </h4>
+            <p> {{ item.page.specifications }} </p>
+        </li>
+    {% endfor %}
+</ul>

@@ -5,7 +5,7 @@ tools: Swift, SwiftUI
 repo: https://github.com/SeikaHirori/janken_RockPaperScissors
 blog:
 specifications: https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
-project_id: janken
+project_id: janken_001
 
 short_summary: Implement Janken (A.K.A. Rock, Papers, Scissors) with Japanese and English language support.
 ---
@@ -21,7 +21,6 @@ its fullest potential. Addition limitation is that tests were not
 written as the focus is learning the tool kit first. Lastly, the look of
 the UI could be improved.
 
-\-\-\-\-\--
 
 Highlights and Experience
 

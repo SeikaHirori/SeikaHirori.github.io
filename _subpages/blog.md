@@ -11,7 +11,7 @@ title: Blog
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <h3> {{ post.date | date_to_string }} </h3>
 
-            {% assign folder_categories = post.categories | join: "_" | replace: "_", " "  %}
+            {% assign folder_categories = post.categories | join: "_" | replace: "_", " " | replace: "blog", ""  %}
             {% if folder_categories %}
                 <h5> Category: {{ folder_categories }}</h5>
             {% endif %}

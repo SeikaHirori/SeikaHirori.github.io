@@ -6,10 +6,10 @@ layout: default
 <h3>Repo: <a href="{{ page.repo }}">{{ page.repo }}</a></h3>
 <h4>Specifications: <a href="{{ page.specifications }}">{{ page.specifications }}</a></h4>
 
-<!-- RFER # 9 -->
+
 {% assign content = content | strip_newlines %}
 {% if content == "" %}
     <p>Abstract and reflection coming soon!</p>
 {% else %}
-    {{content}}
+    {{ content }}
 {% endif %}
