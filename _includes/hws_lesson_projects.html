@@ -1,0 +1,10 @@
+<ul>
+    {% assign hws_lessons = site.projects | where_exp: "project", "project.path contains 'iOS/hws/lessons'" %}
+    {% for item in hws_lessons %}
+        <li>
+            <h2>
+                <a href="{{ item.url }}">{{ item.title }}</a>
+            </h2>
+        </li>
+    {% endfor %}
+</ul>

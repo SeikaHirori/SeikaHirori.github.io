@@ -2,7 +2,7 @@
     {% assign hws_milestones = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" %}
     {% for item in hws_milestones %}
         <li>
-            <h2> <a href="{{ item.page }} ">{{ item.title }}</a> </h2> 
+            <h2> <a href="{{ item.url }} ">{{ item.title }}</a> </h2> 
             <h3>Tech: {{ item.tech }} </h3>
         </li>
     {% endfor %}
