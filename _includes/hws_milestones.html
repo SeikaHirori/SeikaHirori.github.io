@@ -1,0 +1,10 @@
+<ul>
+    {% for item in site.projects %}
+        {% if item.path contains "iOS/hws/milestones/" %}
+        <li>
+            <h2> <a href="{{ item.page }} ">{{ item.title }}</a> </h2> 
+            <h3>Tech: {{ item.tech }} </h3>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>

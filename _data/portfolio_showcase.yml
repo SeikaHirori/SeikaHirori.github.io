@@ -2,7 +2,7 @@
 # Displayed noteworthy projects. This needs to be updated manually
 
 ### Template:
-# - Name:
+# - name:
 #   portfolio_page_link:
 #   tech:
 #   project_id:
@@ -10,8 +10,26 @@
 ### === List starts here === ###
 
 - name: Janken [Rock, Paper, Scissors]
-  portfolio_page_link: /projects/0-janken.html
+  portfolio_page_link: /projects/iOS/hws/milestones/0-janken.html
   tech: Swift, SwiftUI
   project_id: janken_001
 
+# - Name:
+#   portfolio_page_link:
+#   tech:
+#   project_id:
 
+# - Name:
+#   portfolio_page_link:
+#   tech:
+#   project_id:
+
+# - Name:
+#   portfolio_page_link:
+#   tech:
+#   project_id:
+
+# - Name:
+#   portfolio_page_link:
+#   tech:
+#   project_id:

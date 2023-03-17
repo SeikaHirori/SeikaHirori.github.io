@@ -19,35 +19,7 @@ last_updated: 2023-03-14
 
 <div>
 <h2> Here are some other projects :3 </h2>
-<ul>
-    {% for project in site.projects %}
-        {% assign is_in_showcase = false %}
-        {% for showcase in site.data.portfolio_showcase %}
-            {% if showcase.project_id == project.project_id %}
-                {% assign is_in_showcase = true %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-
-        {% if is_in_showcase %}
-            {% continue %}
-        {% else %}
-            <li>
-                <h2><a href="{{project.url}}">{{project.title}}</a></h2>
-                <h4> Tech: {{project.tools}}</h4>
-                <p>
-                    {% if project.short_summary %}
-                        {{ project.short_summary}}
-                    {% else %}
-                        {{ project.excerpt }}
-                    {% endif %}
-                </p>
-            </li>
-        {% endif %}
-
-        
-    {% endfor %}
-</ul>
+    {% include portfolio_others.html %}
 </div>
 <br>
 
