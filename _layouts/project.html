@@ -6,7 +6,8 @@ layout: default
 
 <div>
     <h1> {{ page.title }} </h1>
-    <h4>Date: {{ page.date | date_to_string }}</h4>
+    <h5>Original Date: {{ page.date | date_to_string }}</h5>
+    <h3>Last updated: {{ page.last_updated | date_to_string }} </h3>
     <h3>Tech: {{ page.tech }}</h3>
     <h4>Repo: <a href="{{ page.repo }}">{{ page.repo }}</a></h4>
     <h4>Specifications: <a href="{{ page.specifications }}">{{ page.specifications }}</a></h4>

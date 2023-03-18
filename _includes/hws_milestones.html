@@ -1,9 +1,10 @@
 <ul>
-    {% assign hws_milestones = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" %}
+    {% assign hws_milestones = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" | sort: "last_updated | reverse %}
     {% for item in hws_milestones %}
         <li>
             <h2> <a href="{{ item.url }} ">{{ item.title }}</a> </h2> 
-            <h3>Tech: {{ item.tech }} </h3>
+            <h3>Tech: {{ item.tech | join: ", "  }} </h3>
+            <h4>Tags: {{ item.tags | join: ", "}} </h4>
         </li>
     {% endfor %}
 </ul>
