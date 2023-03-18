@@ -47,7 +47,7 @@ layout: default
 <div>
     <h2>Reflection Posts:</h2>
 
-    {% assign posts = site.posts | where_exp: 'post', 'post.project_id == page.project_id' %}
+    {% assign posts = site.posts | where_exp: 'post', "post.project_id contains page.project_id" %}
     {% assign post_size = posts | size %}
     {% if post_size > 0 %}
     <ul>

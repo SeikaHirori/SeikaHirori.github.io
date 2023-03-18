@@ -1,9 +1,9 @@
 ---
 layout: project
-title: 
-date: 
-last_updated:
-repo: 
+title: Check All Photos
+date: 2023-03-07
+last_updated: 2023-03-10
+repo: https://github.com/SeikaHirori/checkAllPhotos
 blog: 
 specifications: 
 

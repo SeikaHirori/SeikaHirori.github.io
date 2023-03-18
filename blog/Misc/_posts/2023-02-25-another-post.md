@@ -2,7 +2,8 @@
 layout: post
 title: Test an apple
 repo: 
-project_id: janken_001
+project_id: 
+- janken_001
 tags:
 
 ---
