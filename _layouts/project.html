@@ -6,12 +6,24 @@ layout: default
 
 <div>
     <h1> {{ page.title }} </h1>
-    <h5>Original Date: {{ page.date | date_to_string }}</h5>
-    <h3>Last updated: {{ page.last_updated | date_to_string }} </h3>
-    <h3>Tech: {{ page.tech }}</h3>
+    <h5>Original Date: {{ page.date | date_to_string }}
+
+    </h5>
+    <h3>Last updated: {{ page.last_updated | date_to_string }} 
+
+    </h3>
+    <h3>Tech: 
+        {{ page.tech }}</h3>
     <h4>Repo: <a href="{{ page.repo }}">{{ page.repo }}</a></h4>
-    <h4>Specifications: <a href="{{ page.specifications }}">{{ page.specifications }}</a></h4>
+    <h4>Specifications: 
+        {% if page.specifications %}
+        <a href="{{ page.specifications }}">{{ page.specifications }}</a>
+        {% else %}
+            ໒(⊙ᴗ⊙)७✎▤
+        {% endif %}
+     </h4>
 </div>
+<hr>
 <br>
 
 <div>
@@ -23,6 +35,7 @@ layout: default
     <h2>Summary:</h2>
     <p>{{ short_summary }}</p>
 </div>
+<hr>
 <br>
 
 <div>
@@ -39,11 +52,12 @@ layout: default
             {% endfor %}
         {% else %}
             <li>
-                "໒(⊙ᴗ⊙)७✎▤"
+                ໒(⊙ᴗ⊙)७✎▤
             </li>
         {% endif %}
     </ul>
 </div>
+<hr>
 <br>
 
 <div>

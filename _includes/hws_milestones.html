@@ -1,10 +1,16 @@
+
+
 <ul>
     {% assign hws_milestones = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" | sort: "last_updated | reverse %}
     {% for item in hws_milestones %}
         <li>
             <h2> <a href="{{ item.url }} ">{{ item.title }}</a> </h2> 
-            <h3>Tech: {{ item.tech | join: ", "  }} </h3>
-            <h4>Tags: {{ item.tags | join: ", "}} </h4>
+            <h4>Last updated: <span class="info">{{ item.last_updated | date_to_string }} </span></h4>
+            <h3>Tech: <span class="info">{{ item.tech | join: ", "  }} </span></h3>
+            <h4>Tags: <span class="info">{{ item.tags | join: ", "}} </span></h4>
+            {% if item.short_summary %}
+                <p><span class="headliner">Summary:</span> {{ item.short_summary }}</p>
+            {% endif %}
         </li>
     {% endfor %}
 </ul>

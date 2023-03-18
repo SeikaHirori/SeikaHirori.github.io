@@ -10,7 +10,7 @@
 ### === List starts here === ###
 
 - name: Janken [Rock, Paper, Scissors]
-  portfolio_page_link: /projects/iOS/hws/milestones/0-janken.html
+  portfolio_page_link: /projects/iOS/hws/milestones/janken.html
   tech: Swift, SwiftUI
   project_id: janken_001
 

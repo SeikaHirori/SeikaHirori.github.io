@@ -1,11 +1,17 @@
 ---
 layout: project
 title:
-tools: 
+tech: 
+    - 
 repo_link: 
 blog_link:
 specifications: 
+
+tags:
+    - 
+
 project_id:
+
 short_summary:
 ---
 
@@ -20,7 +26,8 @@ layout: project
 title:
 
 <!-- Programming languages, frameworks, test tools, libraries, etc. -->
-tools: 
+tech: 
+    -
 
 <!-- Link to project's GitHub repo -->
 repo_link: 
@@ -31,6 +38,9 @@ blog_link:
 <!-- Link to project specifications/ guidelines if it is used. -->
 specifications: 
 
+# 
+tags:
+    -
 <!-- Project id that could be used to reference posts from blog -->
 project_id:
 

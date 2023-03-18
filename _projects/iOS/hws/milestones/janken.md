@@ -12,6 +12,7 @@ specifications: https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
 
 tags:
 - iOS Development
+- Multi-languages
 
 project_id: janken_001
 
