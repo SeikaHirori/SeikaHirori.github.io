@@ -2,11 +2,27 @@
 
 - name: Home
   link: /
+  meee: 
+    - /index.html
+
 - name: Portfolio
   link: /subpages/portfolio.html
+  meee: 
+    - /subpages/portfolio.html
+    - /projects
+
 - name: Blog
   link: /subpages/blog.html
+  meee: 
+    - /subpages/blog.html
+    - /blog
+
 - name: Highlights
   link: /subpages/highlights.html
+  meee: 
+    - /subpages/highlights
+
 - name: About
   link: /subpages/about.html
+  meee: 
+    - /subpages/about
