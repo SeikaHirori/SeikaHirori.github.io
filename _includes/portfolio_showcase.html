@@ -1,4 +1,4 @@
-{% assign showcase = site.projects %}
+{% assign showcase = site.projects | sort: "last_updated" | reverse %}
 
 <ul>
     {% for item in showcase %}

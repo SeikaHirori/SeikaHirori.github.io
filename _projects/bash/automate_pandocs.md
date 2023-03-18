@@ -8,12 +8,18 @@ blog:
 specifications: 
 
 tech:
-    - 
+    - Shell
+    - Pandoc
 
 tags:
-    - 
+    - Automation
+    - Bash
+    - Shell
+    - Pandoc
+    - Docx
+    - Markdown
 
-project_id: 
+project_id: automate_pandoc_001
 
 short_summary: 
 ---

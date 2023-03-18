@@ -8,12 +8,15 @@ blog:
 specifications: 
 
 tech:
-    - 
+    - Python
 
 tags:
-    - 
+    - Automation
+    - IMG
+    - Media
+    - Camera
 
-project_id: 
+project_id: missing_img_001
 
 short_summary: 
 ---
