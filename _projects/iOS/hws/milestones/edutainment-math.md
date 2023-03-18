@@ -13,5 +13,5 @@ tags:
 - iOS Development
 project_id: edutainment_001
 
-short_summary: WIP
+short_summary: Active WIP
 ---

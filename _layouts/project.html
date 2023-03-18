@@ -6,15 +6,21 @@ layout: default
 
 <div>
     <h1> {{ page.title }} </h1>
-    <h5>Original Date: {{ page.date | date_to_string }}
-
+    <h5>
+        Original Date: <span class="info">{{ page.date | date_to_string }}</span>
     </h5>
-    <h3>Last updated: {{ page.last_updated | date_to_string }} 
-
+    <h3>
+        Last updated: <span class="info">{{ page.last_updated | date_to_string }} </span>
     </h3>
-    <h3>Tech: 
-        {{ page.tech }}</h3>
-    <h4>Repo: <a href="{{ page.repo }}">{{ page.repo }}</a></h4>
+    <h3>
+        Tech: <span class="info">{{ page.tech | join: ", "}}</span>
+    </h3>
+    <h4>
+        Tags: <span class="info">{{ page.tags | join: ", " }}</span>
+    </h4>
+    <h4>
+        Repo: <a href="{{ page.repo }}">{{ page.repo }}</a>
+    </h4>
     <h4>Specifications: 
         {% if page.specifications %}
         <a href="{{ page.specifications }}">{{ page.specifications }}</a>
@@ -39,32 +45,31 @@ layout: default
 <br>
 
 <div>
-<h2>Reflection Posts:</h2>
-    <ul> 
-        {% assign posts = site.posts | where_exp: 'post', 'post.project_id == page.project_id' %}
+    <h2>Reflection Posts:</h2>
 
-        {% assign post_size = posts | size %}
-        {% if post_size > 0 %}
-            {% for post in posts %}
-            <li>
-                <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
-            </li>
-            {% endfor %}
-        {% else %}
-            <li>
-                ໒(⊙ᴗ⊙)७✎▤
-            </li>
-        {% endif %}
+    {% assign posts = site.posts | where_exp: 'post', 'post.project_id == page.project_id' %}
+    {% assign post_size = posts | size %}
+    {% if post_size > 0 %}
+    <ul>
+        {% for post in posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+        </li>
+        {% endfor %}
     </ul>
+    {% else %}
+        <p>໒(⊙ᴗ⊙)७✎▤</p>
+    {% endif %}
 </div>
-<hr>
-<br>
+
 
 <div>
+    
     {% assign content = content | strip_newlines %}
     {% if content == "" %}
-        <p>໒(⊙ᴗ⊙)७✎▤</p>
     {% else %}
+        <hr>
+        <br>
         {{ content }}
     {% endif %}
 </div>

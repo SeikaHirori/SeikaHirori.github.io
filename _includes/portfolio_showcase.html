@@ -1,12 +1,28 @@
+{% assign showcase = site.projects %}
 
 <ul>
-    {% for item in site.data.portfolio_showcase %}
-        <li>
-            <h2><a href=" {{ item.portfolio_page_link }} ">{{ item.name }}</a></h2>
-            <dl>
-                <dt> Tech: {{ item.tech }} </dt>
-            </dl> 
-            <h4> {{ item.page.specifications }}</h4>
-        </li>
+    {% for item in showcase %}
+        {% assign is_in_showcase = false %}
+        
+        {% for entry in site.data.portfolio_showcase %}
+            {% if entry.project_id == item.project_id %}
+                {% assign is_in_showcase = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% if is_in_showcase %}
+            <li>
+                <h2><a href=" {{ item.url }} ">{{ item.title }}</a></h2>
+                <h4>Last Updated: <span class="info">{{ item.last_updated | date_to_string }}</span></h4>
+                <h3>Tech: <span class="info">{{ item.tech | join: ", " }}</span> </h3>
+                <h4>Tags: <span class="info">{{ item.tags | join: ", "}}</span> </h4>
+                
+                {% assign summary = item.short_summary %}
+                {% if summary %}
+                <p><span class="headliner">Summary:</span> {{summary}}</p>
+                {% endif %}
+            </li>
+        {% endif %}
     {% endfor %}
 </ul>

@@ -15,5 +15,5 @@ tags:
 
 project_id: guess_the_flag_001
 
-short_summary: 
+short_summary: meep
 ---

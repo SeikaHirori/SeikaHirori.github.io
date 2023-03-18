@@ -8,12 +8,14 @@ blog:
 specifications: 
 
 tech:
-    - 
+    - Swift
+    - SwiftUI
+    
 
 tags:
-    - 
+    - iOS Development
 
-project_id: 
+project_id: animation_001
 
 short_summary: 
 ---

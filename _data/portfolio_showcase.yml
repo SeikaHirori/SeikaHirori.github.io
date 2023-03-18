@@ -8,28 +8,8 @@
 #   project_id:
 
 ### === List starts here === ###
+- project_id: janken_001
+  name: Janken [Rock, Paper, Scissors]
 
-- name: Janken [Rock, Paper, Scissors]
-  portfolio_page_link: /projects/iOS/hws/milestones/janken.html
-  tech: Swift, SwiftUI
-  project_id: janken_001
-
-# - Name:
-#   portfolio_page_link:
-#   tech:
-#   project_id:
-
-# - Name:
-#   portfolio_page_link:
-#   tech:
-#   project_id:
-
-# - Name:
-#   portfolio_page_link:
-#   tech:
-#   project_id:
-
-# - Name:
-#   portfolio_page_link:
-#   tech:
-#   project_id:
+- project_id: edutainment_001
+  name: Edutainment with multiplication
