@@ -14,6 +14,9 @@ In April 2022, I took the dive and started my developer journey. There were seve
 Skills:
 - Swift
 - SwiftUI
+- JSON
+- XML
+
 - Shell/ Bash
 - Python
 - Django
@@ -27,14 +30,12 @@ Skills:
 - JavaScript
 - Java
 
-- JSON
-- XML
-- PostgreSQL
-
 - Docker
 - Jenkins
 - GitHub Actions
 - Git
+- PostgreSQL
+
 
 - Unit Testing
 - Functional Testing
