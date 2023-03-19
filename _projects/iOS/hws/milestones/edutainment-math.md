@@ -7,10 +7,12 @@ tech:
     - Swift
     - SwiftUI
 repo: https://github.com/SeikaHirori/edutainment-math
-blog: 
-specifications: 
+
 tags:
 - iOS Development
+- Unit Testing
+- game
+
 project_id: edutainment_001
 
 short_summary: Active WIP
