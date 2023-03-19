@@ -14,9 +14,31 @@ In April 2022, I took the dive and started my developer journey. There were seve
 Skills:
 - Swift
 - SwiftUI
-- Bash
+- Shell/ Bash
 - Python
 - Django
 - PlayWright
 - Rust
+
+- HTML
+- CSS
+- SASS
+- TypeScript
+- JavaScript
 - Java
+
+- JSON
+- XML
+- PostgreSQL
+
+- Docker
+- Jenkins
+- GitHub Actions
+- Git
+
+- Unit Testing
+- Functional Testing
+- Test-Driven Development
+
+- Camera Operation with Gimbal
+- IBM SPSS Statistics
