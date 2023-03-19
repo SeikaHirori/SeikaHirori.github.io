@@ -14,3 +14,10 @@
             `gem "jekyll-import", "~> 0.21.0"`
             `gem "rexml", "~> 3.2"`
             `gem "safe_yaml", "~> 1.0"`
+
+- Note #3 | Possible way to grab repo information directly from GitHub
+    - https://talk.jekyllrb.com/t/exposing-information-of-all-repositories-through-site-built-with-github-pages/4403/2
+
+- Note #4| Obtaining stats of langages used in personal repo:
+    - API: https://github.com/anuraghazra/github-readme-stats
+        - Found via https://github.com/MichaelCurrin/MichaelCurrin.github.io/blob/master/_includes/interests.html
