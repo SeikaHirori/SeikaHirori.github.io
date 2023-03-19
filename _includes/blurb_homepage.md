@@ -1,13 +1,14 @@
-Welcome! My name is Richard, or Seika! I am an aspiring iOS developer who uses Swift and SwiftUI. I have some experience with scripting with bash, Python, Django, Rust, and Java.
+Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Before starting my software developer journey, I was pursuing the social science field and performing arts. After exposure to both fields, I realized that my skill sets were not being fully utilized. 
+
+In April 2022, I took the dive and started my developer journey. There were several reasons that pushed me:
+- Testing and Problem Solving suited my style. 
+- I love tickering with computer hardware.
+- I dabbled with software adjacent stuff, like Hackintosh, homebrew, and Linux.
 
 You can view my iOS journey <a href="{% link _unique_pages/ios_journey.md %}">here</a> :3
 
+
 If you want to learn more about me, check the about page <a href="{% link _subpages/about.md %}">here</a>!
-<hr>
-<br>
-
-## View my iOS journey through the link below!
-
 
 <br>
 <hr>

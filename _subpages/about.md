@@ -4,6 +4,19 @@ title: About
 ---
 # {{ page.title }}
 
-meep hello. i come from planet stars. we got stars. trade?
+Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Before starting my software developer journey, I was pursuing the social science field and performing arts. After exposure to both fields, I realized that my skill sets were not being fully utilized. 
 
-updated with automating subpages for navigation :3
+In April 2022, I took the dive and started my developer journey. There were several reasons that pushed me:
+- Testing and Problem Solving suited my style. 
+- I love tickering with computer hardware.
+- I dabbled with software adjacent stuff, like Hackintosh, homebrew, and Linux.
+
+Skills:
+- Swift
+- SwiftUI
+- Bash
+- Python
+- Django
+- PlayWright
+- Rust
+- Java
