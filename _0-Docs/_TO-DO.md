@@ -1,4 +1,12 @@
 # TO-DO
+- [ ] Possibily replace manually created "Here are some other projects" with automated GitHub metadata page?
+    - Reasons...
+        - For replacing:
+            - automation so no need to constantly update overall repo.
+            - saves time and can just focus on highlighting projects.
+            - MANUAL PROCESS:
+                - If wanting to link related blog posts, I would need to link it to the project via the repo ID.
+
 - [ ] Adjust navigation bar to have padding (SwiftUI terminology)
     - Each link should have more space
     - I think it's hard to tell where the link starts and ends since the underline blends all them in right now.
