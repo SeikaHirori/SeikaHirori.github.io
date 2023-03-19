@@ -6,7 +6,12 @@ last_updated: 2023-02-22
 tech: 
 - Swift
 - SwiftUI 
+
 repo: https://github.com/SeikaHirori/janken_RockPaperScissors
+repo_id: 602692780
+
+
+
 blog: /blog/Project_Reflection/_posts/2023-03-03-janken.md
 specifications: https://www.hackingwithswift.com/guide/ios-swiftui/2/3/challenge
 

@@ -7,6 +7,7 @@ tech:
     - Swift
     - SwiftUI
 repo: https://github.com/SeikaHirori/edutainment-math
+repo_id: 615476794
 
 tags:
 - iOS Development
