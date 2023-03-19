@@ -5,6 +5,7 @@ source "https://rubygems.org"
 
 gem 'webrick', '~> 1.3', '>= 1.3.1'
 gem 'github-pages', group: :jekyll_plugins
+gem "jekyll-github-metadata", group: :jekyll_plugins
 
 # For Blogger import
 gem "jekyll-sass-converter", "1.5.2"

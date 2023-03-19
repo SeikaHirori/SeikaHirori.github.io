@@ -260,6 +260,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-github-metadata
   jekyll-import (~> 0.21.0)
   jekyll-sass-converter (= 1.5.2)
   rexml (~> 3.2)

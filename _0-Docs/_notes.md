@@ -16,7 +16,10 @@
             `gem "safe_yaml", "~> 1.0"`
 
 - Note #3 | Possible way to grab repo information directly from GitHub
-    - https://talk.jekyllrb.com/t/exposing-information-of-all-repositories-through-site-built-with-github-pages/4403/2
+    - Discussion:
+        - https://talk.jekyllrb.com/t/exposing-information-of-all-repositories-through-site-built-with-github-pages/4403/2
+    - Plugin: 
+        - https://talk.jekyllrb.com/t/exposing-information-of-all-repositories-through-site-built-with-github-pages/4403/2#:~:text=jekyll/github%2Dmetadata,26
 
 - Note #4| Obtaining stats of langages used in personal repo:
     - API: https://github.com/anuraghazra/github-readme-stats
