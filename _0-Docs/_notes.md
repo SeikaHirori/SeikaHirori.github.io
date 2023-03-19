@@ -21,6 +21,14 @@
     - Plugin: 
         - https://talk.jekyllrb.com/t/exposing-information-of-all-repositories-through-site-built-with-github-pages/4403/2#:~:text=jekyll/github%2Dmetadata,26
 
-- Note #4| Obtaining stats of langages used in personal repo:
+- Note #4 | Obtaining stats of langages used in personal repo:
     - API: https://github.com/anuraghazra/github-readme-stats
         - Found via https://github.com/MichaelCurrin/MichaelCurrin.github.io/blob/master/_includes/interests.html
+
+- Note #5 | How GitHub meta data is structured
+    - Example of an object:
+        - https://github.com/doowb/github-metadata#results
+    - Full examples of JSON object:
+        - https://github.com/doowb/github-metadata/blob/master/docs/results.json
+    - GitHub API Docs:
+        - https://developer.github.com/v3/
