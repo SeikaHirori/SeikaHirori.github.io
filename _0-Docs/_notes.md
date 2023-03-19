@@ -32,3 +32,6 @@
         - https://github.com/doowb/github-metadata/blob/master/docs/results.json
     - GitHub API Docs:
         - https://developer.github.com/v3/
+
+- Note #6 | Adding code comments when using Liquid language
+    - https://shopify.github.io/liquid/tags/template/
