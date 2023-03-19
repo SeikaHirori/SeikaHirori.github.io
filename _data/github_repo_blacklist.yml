@@ -1,0 +1,15 @@
+# Blacklist repos that I don't want appearing on my repo page.
+
+- repo_id: 605315941
+  name: SeikaHirori.github.io
+  link: https://github.com/SeikaHirori/SeikaHirori.github.io
+  note: GitHub Page
+
+- repo_id: 597261992
+  name: Seika iOS Journey
+  link: https://github.com/SeikaHirori/Seika_iOS_journey
+
+- repo_id: 570299246
+  name: SeikaHirori.github.io.old_v1
+  link: https://github.com/SeikaHirori/SeikaHirori.github.io.old_v1
+  note: v1 of github page
