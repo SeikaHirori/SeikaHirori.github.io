@@ -12,6 +12,7 @@ tech:
     - Pandoc
 
 tags:
+    - Scripting
     - Automation
     - Bash
     - Shell

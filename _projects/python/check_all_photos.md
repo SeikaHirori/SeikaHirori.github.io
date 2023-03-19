@@ -11,6 +11,7 @@ tech:
     - Python
 
 tags:
+    - Scripting
     - Automation
     - IMG
     - Media
