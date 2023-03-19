@@ -17,10 +17,10 @@
     - /subpages/blog.html
     - /blog
 
-- name: Highlights
-  link: /subpages/highlights.html
+- name: Pins
+  link: /subpages/pins.html
   meee: 
-    - /subpages/highlights
+    - /subpages/pins
 
 - name: About
   link: /subpages/about.html

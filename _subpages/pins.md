@@ -8,4 +8,4 @@ title: Highlights :3
     The list below contains posts that I think are unique, so they deserved to be highlights :3
 </p>
 
-{% include blog_highlights.html %}
+{% include pinned.html %}
