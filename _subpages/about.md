@@ -11,7 +11,10 @@ In April 2022, I took the dive and started my developer journey. There were seve
 - I love tickering with computer hardware.
 - I dabbled with software adjacent stuff, like Hackintosh, homebrew, and Linux.
 
-Skills:
+<br>
+<hr>
+
+## Skills:
 - Swift
 - SwiftUI
 - JSON
