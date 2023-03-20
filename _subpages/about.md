@@ -4,28 +4,37 @@ title: About
 ---
 # {{ page.title }}
 
-Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Before starting my software developer journey, I was pursuing the social science field and performing arts. After exposure to both fields, I realized that my skill sets were not being fully utilized. 
+Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Prior to becoming an iOS developer, I obtained my bachelor's degree in psychology and had pursed the performing arts. After exposure to both fields, I realized that my skill sets were not being fully realized. 
 
-In April 2022, I took the dive and started my developer journey. There were several reasons that pushed me:
-- Testing and Problem Solving suited my style. 
-- I love tickering with computer hardware.
-- I dabbled with software adjacent stuff, like Hackintosh, homebrew, and Linux.
+In April 2022, I committed full-time to teaching myself software development due to my love of:
+```
+- Hardware
+- Problem Solving
+- Testing
+- Research
+- Creativity
+- Curiousity
+- Constantly Learning 
+- Tinking with Hackintosh, Linux, and homebrew
+```
+
+Although it seemed like my past endevaours went to waste, that is not the case. The confidence and creative aspects were gained from the performing arts. The research skills and understanding human interactions stemmed from my experience during my psychology program. These aspects have been crucial to my life, especially with software developement.
 
 <br>
 <hr>
 
 ## Skills:
+
+Primary Stack
 - Swift
 - SwiftUI
-- JSON
-- XML
+
+Languages and Frameworks
 
 - Shell/ Bash
 - Python
 - Django
-- PlayWright
 - Rust
-
 - HTML
 - CSS
 - SASS
@@ -33,16 +42,23 @@ In April 2022, I took the dive and started my developer journey. There were seve
 - JavaScript
 - Java
 
+Data
+- JSON
+- XML
+- PostgreSQL
+
+Tools
+- Git
+- PlayWright
 - Docker
 - Jenkins
 - GitHub Actions
-- Git
-- PostgreSQL
 
-
+Methodology
 - Unit Testing
 - Functional Testing
 - Test-Driven Development
 
-- Camera Operation with Gimbal
+Other
 - IBM SPSS Statistics
+- Camera Operation with Gimbal

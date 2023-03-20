@@ -9,6 +9,8 @@ plugins:
 
 excerpt_separator: <!--more--> # Need to place "<!--more-->" into posts!
 
+default_empty: '໒(⊙ᴗ⊙)७✎▤'
+
 # exclude: [_Docs, _Drafts,]
 
 collections:

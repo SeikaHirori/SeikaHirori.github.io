@@ -1,9 +1,11 @@
 <ul>
     {% for item in site.data.pinned %} 
+    
         <li>
             <a href="{{ item.page_link }}">
-                {{ item.name}}
+                {{ item.name }}
             </a>
         </li>
+        <br>
     {% endfor %}
 </ul>
