@@ -2,6 +2,8 @@
   link: https://devopswithdocker.com/
   format: Online course
   is_it_free: true
+  tech: 
+    - Docker
   summary: 
 
 
@@ -9,4 +11,5 @@
   link:
   format:
   is_it_free:
+  tech:
   summary:

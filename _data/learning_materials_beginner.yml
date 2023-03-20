@@ -2,16 +2,27 @@
   link: https://java-programming.mooc.fi/
   format: online course
   is_it_free: true
+  tech: 
+    - Java
+    - JavaFX
   summary: 
 
 - title: CS50x | Havard University
   link: https://cs50.harvard.edu/x
   format: online course
   is_it_free: true
+  tech: 
+    - C
+    - Python
+    - SQL
+    - HTML
+    - CSS
+    - JavaScript
   summary:
 
 - title:
   link:
   format:
   is_it_free:
+  tech: 
   summary:
