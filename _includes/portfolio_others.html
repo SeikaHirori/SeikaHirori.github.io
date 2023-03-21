@@ -16,9 +16,9 @@
     {% else %}
         <li>
             <h2><a href="{{project.url}}">{{ project.title }}</a></h2>
-            <h4> Last Updated: <span class="info">{{ project.last_updated | date_to_string }} </span></h4>
-            <h3> Tech: <span class="info">{{ project.tech | join: ", " }}</span></h3>
-            <h4> Tags: <span class="info">{{ project.tags | join: ", " }}</span></h4>
+            <h4> Last Updated: <span class="info">{{ project.last_updated | date_to_string  | default: site.default_empty }} </span></h4>
+            <h3> Tech: <span class="info">{{ project.tech | join: ", "  | default: site.default_empty }}</span></h3>
+            <h4> Tags: <span class="info">{{ project.tags | join: ", "  | default: site.default_empty }}</span></h4>
             
             {% assign summary = project.short_summary %}
             {% if project.short_summary | strip_newlines %}

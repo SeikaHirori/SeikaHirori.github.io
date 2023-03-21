@@ -5,21 +5,21 @@ layout: default
 
 
 <div>
-    <h1> {{ page.title }} </h1>
+    <h1> {{ page.title | default: site.default_empty }} </h1>
     <h5>
-        Original Date: <span class="info">{{ page.date | date_to_string }}</span>
+        Original Date: <span class="info">{{ page.date | date_to_string  | default: site.default_empty  }}</span>
     </h5>
     <h3>
-        Last updated: <span class="info">{{ page.last_updated | date_to_string }} </span>
+        Last updated: <span class="info">{{ page.last_updated | date_to_string   | default: site.default_empty  }} </span>
     </h3>
     <h3>
-        Tech: <span class="info">{{ page.tech | join: ", "}}</span>
+        Tech: <span class="info">{{ page.tech | join: ", "  | default: site.default_empty  }}</span>
     </h3>
     <h4>
-        Tags: <span class="info">{{ page.tags | join: ", " }}</span>
+        Tags: <span class="info">{{ page.tags | join: ", "   | default: site.default_empty  }}</span>
     </h4>
     <h4>
-        Repo: <a href="{{ page.repo_link }}">{{ page.repo_link }}</a>
+        Repo: <a href="{{ page.repo_link }}">{{ page.repo_link   | default: site.default_empty  }}</a>
     </h4>
     <h4>Specifications: 
         {% if page.specifications %}

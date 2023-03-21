@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
+<h1>{{ page.title  | default: site.default_empty }}</h1>
 <h3>
-    Date: <span class="info">{{ page.date | date_to_string }}</span>
+    Date: <span class="info">{{ page.date | date_to_string  | default: site.default_empty }}</span>
 </h3>
-<h4>Category: <span class="info">{{ page.categories | join: "_" | replace: "_", " " }}</span></h4>
-<h5>Tags: <span class="info">{{ page.tags | join: ", " }}</span></h5>
+<h4>Category: <span class="info">{{ page.categories | join: "_" | replace: "_", " "  | default: site.default_empty }}</span></h4>
+<h5>Tags: <span class="info">{{ page.tags | join: ", "  | default: site.default_empty }}</span></h5>
 
 <hr>
 <br>
 
-{{content}}
+{{ content }}
 
 

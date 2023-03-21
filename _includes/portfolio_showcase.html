@@ -14,9 +14,9 @@
         {% if is_in_showcase %}
             <li>
                 <h2><a href=" {{ item.url }} ">{{ item.title }}</a></h2>
-                <h4>Last Updated: <span class="info">{{ item.last_updated | date_to_string }}</span></h4>
-                <h3>Tech: <span class="info">{{ item.tech | join: ", " }}</span> </h3>
-                <h4>Tags: <span class="info">{{ item.tags | join: ", "}}</span> </h4>
+                <h4>Last Updated: <span class="info">{{ item.last_updated | date_to_string  | default: site.default_empty }}</span></h4>
+                <h3>Tech: <span class="info">{{ item.tech | join: ", "  | default: site.default_empty }}</span> </h3>
+                <h4>Tags: <span class="info">{{ item.tags | join: ", " | default: site.default_empty }}</span> </h4>
                 
                 {% assign summary = item.short_summary %}
                 {% if summary %}
