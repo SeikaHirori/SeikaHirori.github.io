@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Highlights :3
+title: Pins :3
 ---
 
-<h1>{{ page.title }}</h1>
-<p>
-    The list below contains posts that I think are unique, so they deserved to be highlights :3
-</p>
+# {{ page.title }}
 
+
+The list below contains posts that I think are unique, so they deserved to be highlighted :3
+
+<br>
 {% include pinned.html %}

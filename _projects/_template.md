@@ -3,9 +3,11 @@ layout: project
 title:
 tech: 
     - 
+date: 2023-03-11
+last_updated: 2023-03-12
+
 repo_link: 
-blog_link:
-specifications: 
+repo_id:
 
 tags:
     - 

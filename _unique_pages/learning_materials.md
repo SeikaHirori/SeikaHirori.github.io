@@ -6,9 +6,12 @@ Welcome! This page lists all of the courses, books, and other materials I used t
 
 <br>
 <hr>
-# Beginning Stages
-{% include learning_materials_beginner.md %}
 
+# Beginner Stages
+
+{% include learning_materials_beginner.md %}
+<br>
 <hr>
-# Intermediate and above!
+# Intermediate and beyond!
+
 {% include learning_materials_else.md %}

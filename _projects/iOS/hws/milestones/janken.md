@@ -7,7 +7,7 @@ tech:
 - Swift
 - SwiftUI 
 
-repo: https://github.com/SeikaHirori/janken_RockPaperScissors
+repo_link: https://github.com/SeikaHirori/janken_RockPaperScissors
 repo_id: 602692780
 
 

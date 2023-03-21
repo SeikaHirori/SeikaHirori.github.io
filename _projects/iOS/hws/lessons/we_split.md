@@ -1,14 +1,16 @@
 ---
 layout: project
 title: We Split
+
 date: 2023-02-04
 last_updated: 2023-02-15
+
 tech:
     - Swift
     - SwiftUI
+
 repo: https://github.com/SeikaHirori/WeSplit
-blog: 
-specifications: 
+repo_id:
 
 tags:
     - iOS Development

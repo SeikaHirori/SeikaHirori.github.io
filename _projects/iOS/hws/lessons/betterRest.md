@@ -3,9 +3,9 @@ layout: project
 title: BetterRest
 date: 2023-03-02
 last_updated: 2023-03-04
+
 repo: https://github.com/SeikaHirori/BetterRest
-blog: 
-specifications: 
+repo_id:
 
 tech:
     - Swift

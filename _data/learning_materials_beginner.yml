@@ -1,15 +1,55 @@
+### Template
+# - title: 
+#   link: 
+#   format: 
+#   is_it_free:  
+#   tech: 
+#     - 
+#   tags:
+#     -
+#   summary:
+
 - title: Java Programming | MOOC.fi
   link: https://java-programming.mooc.fi/
-  format: online course
+  format: online course with text, exercises, and projects
   is_it_free: true
   tech: 
     - Java
     - JavaFX
-  summary: 
+  tags:
+    - Beginner
+    - Introduction
+    - Hands-on
+  summary: "This is a more hands-on learning style, which suited me. It's text heavy, but there are plenty of exercises to test the new materials learned. 
+  <br>
+  <br>
+  Reflection post through Java MOOC.fi can be viewed [here](/blog/learning_resources/2022/07/04/personal-experience-with-java.html)
+
+  <br>
+  <br>
+  Alternative MOOC.fi course using Python: [https://programming-23.mooc.fi/](https://programming-23.mooc.fi/)
+
+
+  "
+
+  
+
+- title: 100 Days of SwiftUI | Hacking with Swift (HwS)
+  link: https://www.hackingwithswift.com/100/swiftui
+  format: Online course with text, video, and projects
+  is_it_free: true
+  tech:
+    - Swift
+    - SwiftUI
+    - UIKit
+    - Create ML
+  tags:
+    - iOS Development
+  summary: Currently progressing through this. For learning the Swift syntax (Days 1 - 15), I had primarily used [Exercism](https://exercism.org/tracks/swift/concepts) to learn as I had previous programming experience. Despite that, HwS's syntax lessons were helpful reference. Once the projects with SwiftUI started, the lesson structured really helps the learners follow and implement the tools. 
 
 - title: CS50x | Havard University
   link: https://cs50.harvard.edu/x
-  format: online course
+  format: Online course with video lectures
   is_it_free: true
   tech: 
     - C
@@ -18,11 +58,37 @@
     - HTML
     - CSS
     - JavaScript
+  tags:
+    - Introduction
   summary:
 
-- title:
-  link:
-  format:
-  is_it_free:
+- title: Python Programming MOOC 2023
+  link: https://programming-23.mooc.fi/
+  format: Online course
+  is_it_free: true 
   tech: 
+    - Python
+  tags:
+    - 
+  summary:
+
+- title: Problem Solving with Algorithms and Data Structures using Python
+  link: https://runestone.academy/ns/books/published/pythonds3/index.html
+  format: Online book
+  is_it_free: true
+  tech: 
+    - Python
+  tags:
+    - Data Structures and Algorithms
+  summary: "Hiatus; I stopped at Chapter 5-5. After finishing the MOOC.fi's Java Programming course, I 
+
+  "
+- title: 
+  link: 
+  format: 
+  is_it_free:  
+  tech: 
+    - 
+  tags:
+    -
   summary:

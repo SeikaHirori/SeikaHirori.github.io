@@ -37,7 +37,8 @@
 {% endcomment %}
 
 <p>
-    <a href="{{ repo.html_url }}">{{ repo.name }}</a>, ID: {{ repo.id }}
+    <h2><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
+    Repo ID: {{ repo.id }}
     <br>
     Created date: {{ repo.created_at | date_to_string }}
     <br>

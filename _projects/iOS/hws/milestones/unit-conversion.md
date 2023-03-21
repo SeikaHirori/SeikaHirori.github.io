@@ -6,9 +6,10 @@ last_updated: 2023-02-10
 tech: 
 - Swift
 - SwiftUI
-repo: https://github.com/SeikaHirori/unitConversion_iOS
-blog_link:
-specifications:
+
+repo_link: https://github.com/SeikaHirori/unitConversion_iOS
+repo_id:
+
 tags:
 - iOS Development
 

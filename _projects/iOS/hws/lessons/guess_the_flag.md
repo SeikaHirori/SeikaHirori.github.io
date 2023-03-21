@@ -1,11 +1,12 @@
 ---
 layout: project
 title: Guess the Flag
+
 date: 2023-02-10
 last_updated: 2023-03-17
+
 repo: https://github.com/SeikaHirori/Guess-the-Flag
-blog: 
-specifications: 
+repo_id:
 
 tech:
     - Swift, SwiftUI

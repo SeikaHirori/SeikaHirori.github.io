@@ -6,7 +6,7 @@ last_updated: 2023-03-17
 tech: 
     - Swift
     - SwiftUI
-repo: https://github.com/SeikaHirori/edutainment-math
+repo_link: https://github.com/SeikaHirori/edutainment-math
 repo_id: 615476794
 
 tags:

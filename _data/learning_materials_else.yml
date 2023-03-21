@@ -1,3 +1,24 @@
+### Template
+# - title: 
+#   link: 
+#   format: 
+#   is_it_free:  
+#   tech: 
+#     - 
+#   tags:
+#     -
+#   summary:
+
+
+- title: Swift On Tap
+  link: https://swiftontap.com/
+  format: Docs
+  is_it_free: true
+  tech:
+    - SwiftUI
+    - Swift
+  summary:
+
 - title: DevOps with Docker
   link: https://devopswithdocker.com/
   format: Online course
@@ -7,9 +28,31 @@
   summary: 
 
 
-- title: 
-  link:
-  format:
-  is_it_free:
+- title: Exercism
+  link: http://exercism.org/
+  format: Online course
+  is_it_free: true
   tech:
+    - Swift
+    - Rust
+  summary:
+
+- title: CS50w
+  link: 
+  format: 
+  is_it_free:  
+  tech: 
+    - 
+  tags:
+    -
+  summary:
+
+- title: Obey the Testing Goat 
+  link: 
+  format: 
+  is_it_free:  
+  tech: 
+    - 
+  tags:
+    -
   summary:

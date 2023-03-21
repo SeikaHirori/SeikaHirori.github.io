@@ -1,11 +1,12 @@
 ---
 layout: project
 title: Word Scramble
+
 date: 2023-03-05
 last_updated: 2023-03-06
-repo: https://github.com/SeikaHirori/WordScramble
-blog: 
-specifications: 
+
+repo_link: https://github.com/SeikaHirori/WordScramble
+repo_id:
 
 tech:
     - Swift

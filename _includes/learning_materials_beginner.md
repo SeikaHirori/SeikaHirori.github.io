@@ -20,6 +20,8 @@
 
     {% assign tech = item.tech | join: ", " | default: default_empty_value %}
 
+    {% assign tag = item.tags | join: ", " | default: default_empty_value %}
+
     {% assign summary = item.summary | default: default_empty_value %}
 
 {% if item.title %}
@@ -37,6 +39,8 @@
 <span class="headliner">Is it free?</span>: {{ cost }}
 
 <span class="headliner">Tech</span>: {{ tech }}
+
+<span class="headliner">Tags</span>: {{ tag }}
 
 <span class="headliner">Summary</span>: {{ summary }}
 
