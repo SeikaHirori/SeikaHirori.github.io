@@ -5,6 +5,10 @@
 {% endcomment %}
 {% assign milestones = site.data.hws_milestones %}
 
+{% comment %}
+<!-- List of project pages that are iOS -->
+{% endcomment %}
+{% assign hws_list = site.projects | where_exp: "project", "project.path contains 'iOS/'" %}
 
 
 {% assign sorted_repo = site.github.public_repositories   
@@ -72,7 +76,6 @@
     {% assign pushed_at = repo.pushed_at | date_to_string %}
     {% assign language = repo.language %}
 
-{% assign hws_list = site.projects %}
 <ul>
     {% for item in hws_list %}
         {% assign item_id = item.repo_id %}
