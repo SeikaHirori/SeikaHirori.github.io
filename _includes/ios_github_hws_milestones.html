@@ -10,7 +10,9 @@
 {% endcomment %}
 {% assign hws_list = site.projects | where_exp: "project", "project.path contains 'iOS/'" %}
 
-
+{% comment %}
+<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
+{% endcomment %}
 {% assign sorted_repo = site.github.public_repositories   
     | sort: "pushed_at" 
     | reverse
@@ -69,53 +71,79 @@
     <!--- Otherwise, display it. --->
     {% endcomment %}
 
+    {% comment %}
+    <!-- By default, assign default values to be from the GitHub repo -->
+    {% endcomment %}
     {% assign title = repo.name %}
     {% assign repo_link = repo.html_url %}
     {% assign repo_id = repo.id %}
-    {% assign created_at = repo.created_at | date_to_string %}
-    {% assign pushed_at = repo.pushed_at | date_to_string %}
-    {% assign language = repo.language %}
+    {% assign last_updated = repo.pushed_at | date_to_string %}
+    {% assign tech = repo.language %}
+    {% assign short_summary = repo.description %}
 
-<ul>
+
     {% for item in hws_list %}
         {% assign item_id = item.repo_id %}
         {% if item_id != current_id %}
             {% continue %}
         {% endif %}
 
-    {% comment %} 
-    <!-- Assign variables -->
-    {% endcomment %}
-    {% assign title = item.title %}
-    {% assign url = item.url %}
-    {% assign last_updated = item.last_updated | date_to_string %}
-    {% assign tech = item.tech | join: ", " %}
-    {% assign tags = item.tags | join: ", " %}
-    {% assign short_summary = item.short_summary %}
+        {% comment %} 
+        <!-- Assign variables -->
+        {% endcomment %}
+        
+        {% assign url = item.url %}
 
-        <li>
-
-            <h2>
-                {% if url %}
-                    <a href="{{ url }}">{{ title }}</a>
-                {% else %}
-                    {{ title }}
-                {% endif %}
-            </h2>
-            <h4>
-                Last Updated: <span class="info">{{ last_updated}}</span>
-            </h4>
-            <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
-            <h3>Tech: <span class="info">{{ tech }} </span> 
-            </h3>
-            <h4>Tags: <span class="info">{{ tags }} </span>
-            </h4>
-            {% if item.short_summary %}
-                <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
-            
+        {% if url %}
+            {% if item.title %}
+                {% assign title = item.title %}
             {% endif %}
-        </li>
+
+            {% if item.last_updated %}
+                {% assign last_updated = item.last_updated | date_to_string %}
+            {% endif %}
+
+            {% if item.tech %}
+                {% assign tech = item.tech | join: ", " %}
+            {% endif %}
+
+            {% if item.tags %}
+                {% assign tags = item.tags | join: ", " %}
+            {% endif %}
+
+            {% if item.short_summary %}
+                {% assign short_summary = item.short_summary %}
+            {% endif %}
+        
+        {% endif %}
+
     {% endfor %}
+
+{% comment %}
+<!-- Display the information -->
+{% endcomment %}
+<ul>
+    <li>
+        <h2>
+            {% if url %}
+                <a href="{{ url }}">{{ title }}</a>
+            {% else %}
+                {{ title }}
+            {% endif %}
+        </h2>
+        <h4>
+            Last Updated: <span class="info">{{ last_updated}}</span>
+        </h4>
+        <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
+        <h3>Tech: <span class="info">{{ tech }} </span> 
+        </h3>
+        <h4>Tags: <span class="info">{{ tags }} </span>
+        </h4>
+        {% if short_summary  %}
+            <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
+        
+        {% endif %}
+    </li>
 </ul>
 
 {% endfor %}

@@ -16,5 +16,5 @@ tags:
 
 project_id: edutainment_001
 
-short_summary: Active WIP
+short_summary:
 ---

@@ -3,7 +3,9 @@
     # Sort by most recent push. 
     ############################### -->
 {% endcomment %} 
-{% assign sorted_repo = site.github.public_repositories   
+{% assign desired_language = "Swift" %}
+{% assign sorted_repo = site.github.public_repositories 
+    | where_exp: "current", "current.language == desired_language"
     | sort: "pushed_at" 
     | reverse
 %}
@@ -33,10 +35,11 @@
 
     {% comment %}
     <!--- If project isn't using the lang, "Swift", skip. --->
-    {% endcomment %}
-    {% if repo.language != "Swift" %}
+    <!-- {% if repo.language != "Swift" %}
         {% continue %}
-    {% endif %}
+    {% endif %} -->
+    {% endcomment %}
+    
 
 
     {% comment %}
