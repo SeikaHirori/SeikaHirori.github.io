@@ -1,15 +1,31 @@
+{% assign hws_list = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" | sort: "last_updated | reverse %}
 
 
 <ul>
-    {% assign hws_milestones = site.projects | where_exp: "project", "project.path contains 'iOS/hws/milestones/'" | sort: "last_updated | reverse %}
-    {% for item in hws_milestones %}
+    {% for item in hws_list %}
+    {% comment %} 
+    <!-- Assign variables -->
+    {% endcomment %}
+    {% assign title = item.title %}
+    {% assign url = item.url %}
+    {% assign last_updated = item.last_updated | date_to_string %}
+    {% assign tech = item.tech | join: ", " %}
+    {% assign tags = item.tags | join: ", " %}
+    {% assign short_summary = item.short_summary %}
+
         <li>
-            <h2> <a href="{{ item.url }} ">{{ item.title }}</a> </h2> 
-            <h4>Last Updated: <span class="info">{{ item.last_updated | date_to_string }} </span></h4>
-            <h3>Tech: <span class="info">{{ item.tech | join: ", "  }} </span></h3>
-            <h4>Tags: <span class="info">{{ item.tags | join: ", "}} </span></h4>
+            <h2>
+                <a href="{{ url }}">{{ title }}</a>
+            </h2>
+            <h4>
+                Last Updated: <span class="info">{{ last_updated}}</span>
+            </h4>
+            <h3>Tech: <span class="info">{{ tech }} </span> 
+            </h3>
+            <h4>Tags: <span class="info">{{ tags }} </span>
+            </h4>
             {% if item.short_summary %}
-                <p><span class="headliner">Summary:</span> {{ item.short_summary }}</p>
+                <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
             {% endif %}
         </li>
     {% endfor %}
