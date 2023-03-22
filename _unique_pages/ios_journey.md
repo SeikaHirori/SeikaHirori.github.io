@@ -14,5 +14,5 @@ last_updated: 2023-03-18
 ## Milestones (HwS)
 {% include ios_github_hws_milestones.html %}
 
-## Exercises (HwS)
-{% include hws_lesson_projects.html %}
+## Others
+{% include ios_github_others.html %}

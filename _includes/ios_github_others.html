@@ -33,7 +33,7 @@
         {% endif %}
     {% endfor %}
 
-    {% if is_it_in_milestones != true %}
+    {% if is_it_in_milestones == true %}
         {% continue %}
     {% endif %}
 
@@ -96,6 +96,7 @@
         {% assign url = item.url %}
 
         {% if url %}
+        
             {% if item.title %}
                 {% assign title = item.title %}
             {% endif %}

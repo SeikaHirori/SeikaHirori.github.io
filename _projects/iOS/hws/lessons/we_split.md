@@ -13,7 +13,6 @@ repo: https://github.com/SeikaHirori/WeSplit
 repo_id:
 
 tags:
-    - iOS Development
 
 project_id: weSplit_001
 
