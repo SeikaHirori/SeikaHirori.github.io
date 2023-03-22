@@ -74,7 +74,7 @@
     {% comment %}
     <!-- By default, assign default values to be from the GitHub repo -->
     {% endcomment %}
-    {% assign title = repo.name %}
+    {% assign title = repo.name | replace: "-", " " %}
     {% assign repo_link = repo.html_url %}
     {% assign repo_id = repo.id %}
     {% assign last_updated = repo.pushed_at | date_to_string %}
