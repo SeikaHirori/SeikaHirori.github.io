@@ -3,6 +3,8 @@
 
 <ul>
     {% for item in hws_list %}
+
+
     {% comment %} 
     <!-- Assign variables -->
     {% endcomment %}
@@ -26,6 +28,7 @@
             </h4>
             {% if item.short_summary %}
                 <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
+            
             {% endif %}
         </li>
     {% endfor %}
