@@ -11,30 +11,31 @@
 %}
 
 {% for repo in sorted_repo %}
-{% assign is_it_blacklisted = false %}
+    {% assign is_it_blacklisted = false %}
 
-{% comment %}
-<!--- Check if the GitHub Repo is blacklisted --->
-{% endcomment %}
+    {% comment %}
+    <!--- Check if the GitHub Repo is blacklisted --->
+    {% endcomment %}
 
-{% for item in site.data.github_repo_blacklist %}
-{% if item.repo_id  == repo.id %}
-    {% assign is_it_blacklisted = true %}
-    {% break %}
-{% endif %}
-{% endfor %}
+    {% for item in site.data.github_repo_blacklist %}
+        {% if item.repo_id  == repo.id %}
+            {% assign is_it_blacklisted = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
 
-{% comment %} 
-<!--- If it's blacklisted, skip it. --->
-{% endcomment %}
+    {% comment %} 
+    <!--- If it's blacklisted, skip it. --->
+    {% endcomment %}
 
-{% if is_it_blacklisted == true %}
-    {% continue %}
-{% endif %}
+    {% if is_it_blacklisted == true %}
+        {% continue %}
+    {% endif %}
 
-{% comment %}
-<!--- Otherwise, display it. --->
-{% endcomment %}
+    
+    {% comment %}
+    <!--- Otherwise, display it. --->
+    {% endcomment %}
 
 <p>
     <h2><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
@@ -47,6 +48,7 @@
     Languages: {{ repo.language }}  
 
 </p>
+
 <br>
 
 {% endfor %}
