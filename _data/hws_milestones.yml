@@ -1,0 +1,12 @@
+### Template
+# - repo_id:
+#   name:
+
+- repo_id: 615476794
+  name: Edutainment Math
+
+- repo_id: 602692780
+  name: じゃんけん (Janken)
+
+- repo_id: 599238989
+  name: Unit Conversion
