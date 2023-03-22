@@ -1,0 +1,59 @@
+{% comment %}
+    <!-- ###############################
+    # Sort by most recent push. 
+    ############################### -->
+{% endcomment %} 
+{% assign sorted_repo = site.github.public_repositories   
+    | sort: "pushed_at" 
+    | reverse
+%}
+
+{% for repo in sorted_repo %}
+    {% assign is_it_blacklisted = false %}
+
+
+    {% comment %}
+    <!--- Check if the GitHub Repo is blacklisted --->
+    {% endcomment %}
+    {% for item in site.data.github_repo_blacklist %}
+        {% if item.repo_id  == repo.id %}
+            {% assign is_it_blacklisted = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+
+    {% comment %} 
+    <!--- If it's blacklisted, skip it. --->
+    {% endcomment %}
+    {% if is_it_blacklisted == true %}
+        {% continue %}
+    {% endif %}
+
+
+    {% comment %}
+    <!--- If project isn't using the lang, "Swift", skip. --->
+    {% endcomment %}
+    {% if repo.language != "Swift" %}
+        {% continue %}
+    {% endif %}
+
+
+    {% comment %}
+    <!--- Otherwise, display it. --->
+    {% endcomment %}
+<p>
+    <h2><a href="{{ repo.html_url }}">{{ repo.name }}</a></h2>
+    Repo ID: {{ repo.id }}
+    <br>
+    Created date: {{ repo.created_at | date_to_string }}
+    <br>
+    Last Updated: {{ repo.pushed_at | date_to_string }}
+    <br>
+    Languages: {{ repo.language }}  
+
+</p>
+
+<br>
+
+{% endfor %}
