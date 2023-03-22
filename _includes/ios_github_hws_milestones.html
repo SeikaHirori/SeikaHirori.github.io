@@ -1,0 +1,118 @@
+{% comment %}
+<!-- PURPOSE: Grab projects that are listed in "_data/hws_milestones.yml" 
+    * Replace old file "hws_milestones.html"
+-->
+{% endcomment %}
+{% assign milestones = site.data.hws_milestones %}
+
+
+
+{% assign sorted_repo = site.github.public_repositories   
+    | sort: "pushed_at" 
+    | reverse
+%}
+
+
+{% for repo in sorted_repo %}
+    {% comment %}
+    <!-- Check to see if repo is in the milestones list -->
+    {% endcomment %}
+    {% assign is_it_in_milestones = false %}
+    {% assign current_id = repo.id %}
+
+    {% for milestone in milestones %}
+        {% if current_id == milestone.repo_id %}
+            {% assign is_it_in_milestones = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+    {% if is_it_in_milestones != true %}
+        {% continue %}
+    {% endif %}
+
+
+    {% comment %}
+    <!--- Check if the GitHub Repo is blacklisted --->
+    {% endcomment %}
+    
+    {% assign is_it_blacklisted = false %}
+    {% for item in site.data.github_repo_blacklist %}
+        {% if item.repo_id  == repo.id %}
+            {% assign is_it_blacklisted = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+
+
+    {% comment %} 
+    <!--- If it's blacklisted, skip it. --->
+    {% endcomment %}
+    {% if is_it_blacklisted == true %}
+        {% continue %}
+    {% endif %}
+
+
+    {% comment %}
+    <!--- If project isn't using the lang, "Swift", skip. --->
+    {% endcomment %}
+    {% if repo.language != "Swift" %}
+        {% continue %}
+    {% endif %}
+
+
+    {% comment %}
+    <!--- Otherwise, display it. --->
+    {% endcomment %}
+
+    {% assign title = repo.name %}
+    {% assign repo_link = repo.html_url %}
+    {% assign repo_id = repo.id %}
+    {% assign created_at = repo.created_at | date_to_string %}
+    {% assign pushed_at = repo.pushed_at | date_to_string %}
+    {% assign language = repo.language %}
+
+{% assign hws_list = site.projects %}
+<ul>
+    {% for item in hws_list %}
+        {% assign item_id = item.repo_id %}
+        {% if item_id != current_id %}
+            {% continue %}
+        {% endif %}
+
+    {% comment %} 
+    <!-- Assign variables -->
+    {% endcomment %}
+    {% assign title = item.title %}
+    {% assign url = item.url %}
+    {% assign last_updated = item.last_updated | date_to_string %}
+    {% assign tech = item.tech | join: ", " %}
+    {% assign tags = item.tags | join: ", " %}
+    {% assign short_summary = item.short_summary %}
+
+        <li>
+
+            <h2>
+                {% if url %}
+                    <a href="{{ url }}">{{ title }}</a>
+                {% else %}
+                    {{ title }}
+                {% endif %}
+            </h2>
+            <h4>
+                Last Updated: <span class="info">{{ last_updated}}</span>
+            </h4>
+            <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
+            <h3>Tech: <span class="info">{{ tech }} </span> 
+            </h3>
+            <h4>Tags: <span class="info">{{ tags }} </span>
+            </h4>
+            {% if item.short_summary %}
+                <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
+            
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+
+{% endfor %}
