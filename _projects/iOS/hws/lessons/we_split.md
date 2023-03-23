@@ -10,9 +10,10 @@ tech:
     - SwiftUI
 
 repo: https://github.com/SeikaHirori/WeSplit
-repo_id:
+repo_id: 597552626
 
-tags:
+tags:   
+    - iOS Development
 
 project_id: weSplit_001
 

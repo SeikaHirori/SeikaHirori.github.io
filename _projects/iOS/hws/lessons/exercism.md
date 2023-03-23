@@ -8,7 +8,7 @@ tech:
     - Swift
 
 repo: https://github.com/SeikaHirori/personal-exercism-practice/tree/master/swift
-repo_id:
+repo_id: 560665321
 
 tags:
     - iOS Development

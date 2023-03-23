@@ -6,10 +6,11 @@ date: 2023-02-14
 last_updated: 2023-02-16
 
 repo: https://github.com/SeikaHirori/ViewsAndModifiers
-repo_id:
+repo_id: 601858005
 
 tech:
-    - Swift, SwiftUI
+    - Swift
+    - SwiftUI
 
 tags:
     - iOS Development

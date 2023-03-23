@@ -7,7 +7,7 @@ tech:
     - HTML
 
 repo_link: https://github.com/SeikaHirori/miru
-repo_id:
+repo_id: 520648082
 
 tags:
     - 
