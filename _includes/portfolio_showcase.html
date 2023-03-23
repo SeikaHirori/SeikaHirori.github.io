@@ -1,21 +1,66 @@
-{% assign showcase = site.projects | sort: "last_updated" | reverse %}
+{% comment %}
+<!-- Grab list of items from projects folder -->
+{% endcomment %} 
+{% assign projects_folder = site.projects | sort: "last_updated" | reverse %}
+
+{% comment %}
+<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
+{% endcomment %}
+{% assign sorted_github_repo = site.github.public_repositories   
+    | sort: "pushed_at" 
+    | reverse
+%}
 
 <ul>
-    {% for item in showcase %}
+    {% for item in projects_folder %}
+        {% assign current_repo_id = item.repo_id %}
         {% assign is_in_showcase = false %}
         
         {% for entry in site.data.portfolio_showcase %}
-            {% if entry.project_id == item.project_id %}
+            {% if entry.repo_id == current_repo_id %}
                 {% assign is_in_showcase = true %}
                 {% break %}
             {% endif %}
         {% endfor %}
 
         {% if is_in_showcase %}
+            
+            {% comment %}
+            <!-- By default, assign default values to be from the GitHub repo -->
+            {% endcomment %}
+
+            {% for github_repo in sorted_github_repo %} 
+                
+                {% if github_repo == current_repo_id %}
+                    {% assign title = sorted_github_repo.name | replace: "-", " " %}
+                    {% assign repo_link = sorted_github_repo.html_url %}
+                    {% assign last_updated = sorted_github_repo.pushed_at | date_to_string %}
+                    {% assign tech = sorted_github_repo.language %}
+                    {% assign short_summary = sorted_github_repo.description %}
+
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+
+            {% comment %}
+            <!-- Start grabbing information from project file -->
+            {% endcomment %}
+            {% assign title = item.title %}
+            {% assign url = item.url %}
+            {% assign repo_link = item.repo_link %}
+            {% assign last_updated = item.last_updated | date_to_string  | default: site.default_empty %}
+            {% assign tech = item.tech | join: ", "  | default: site.default_empty%}
+
+        
             <li>
-                <h2><a href=" {{ item.url }} ">{{ item.title }}</a></h2>
-                <h4>Last Updated: <span class="info">{{ item.last_updated | date_to_string  | default: site.default_empty }}</span></h4>
-                <h3>Tech: <span class="info">{{ item.tech | join: ", "  | default: site.default_empty }}</span> </h3>
+                {% if url %}
+                    <h2><a href=" {{ url }} ">{{ title }}</a></h2>
+                {% else %}
+                    <h2>{{ title }}</h2>
+                {% endif %}
+                <h4>Last Updated: <span class="info">{{ last_updated }}</span></h4>
+                <h4>Repo link: <span class="info">{{ repo_link }}</span></h4>
+                <h3>Tech: <span class="info">{{ tech }}</span> </h3>
                 <h4>Tags: <span class="info">{{ item.tags | join: ", " | default: site.default_empty }}</span> </h4>
                 
                 {% assign summary = item.short_summary %}
@@ -24,5 +69,6 @@
                 {% endif %}
             </li>
         {% endif %}
+        
     {% endfor %}
 </ul>
