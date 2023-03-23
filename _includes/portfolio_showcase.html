@@ -70,12 +70,14 @@
             <h4>Last Updated: <span class="info">{{ last_updated }}</span></h4>
             
             {% if repo_link %}
-                <h4>Repo link: <span class="info">{{ repo_link }}</span></h4>
+                <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
             {% endif %}
             
             <h3>Tech: <span class="info">{{ tech }}</span> </h3>
             
-            <h4>Tags: <span class="info">{{ tags }}</span> </h4>
+            {% if tags %}
+                <h4>Tags: <span class="info">{{ tags }}</span> </h4>
+            {% endif %}
             
             {% if summary %}
             <p><span class="headliner">Summary:</span> {{summary}}</p>
