@@ -11,12 +11,16 @@
     | reverse
 %}
 
+{% assign portfolio_showcases = site.data.portfolio_showcase %}
+
+
 <ul>
+    
     {% for item in projects_folder %}
         {% assign current_repo_id = item.repo_id %}
         {% assign is_in_showcase = false %}
         
-        {% for entry in site.data.portfolio_showcase %}
+        {% for entry in portfolio_showcases %}
             {% if entry.repo_id == current_repo_id %}
                 {% assign is_in_showcase = true %}
                 {% break %}
