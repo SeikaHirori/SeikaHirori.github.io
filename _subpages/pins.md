@@ -9,4 +9,4 @@ title: Pins :3
 The list below contains posts that I think are unique, so they deserved to be highlighted :3
 
 <br>
-{% include pinned.html %}
+{% include pinned.md %}

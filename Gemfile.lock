@@ -262,6 +262,7 @@ DEPENDENCIES
   github-pages
   jekyll-github-metadata
   jekyll-import (~> 0.21.0)
+  jekyll-relative-links
   jekyll-sass-converter (= 1.5.2)
   rexml (~> 3.2)
   safe_yaml (~> 1.0)

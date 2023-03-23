@@ -26,6 +26,7 @@
         - Found via https://github.com/MichaelCurrin/MichaelCurrin.github.io/blob/master/_includes/interests.html
 
 - Note #5 | How GitHub meta data is structured
+    - this is when looping through "site.github.github_repositories"
     - Example of an object:
         - https://github.com/doowb/github-metadata#results
     - Full examples of JSON object:
