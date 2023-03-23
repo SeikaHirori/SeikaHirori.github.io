@@ -28,7 +28,7 @@
                 {% assign repo_link = github_repo.html_url %}
                 {% assign last_updated = github_repo.pushed_at | date_to_string %}
                 {% assign tech = github_repo.language %}
-                {% assign short_summary = github_repo.description %}
+                {% assign displayed_summary = github_repo.description %}
 
                 {% break %}
             {% endif %}
@@ -46,7 +46,7 @@
                     {% assign last_updated = item.last_updated | date_to_string  | default: site.default_empty %}
                     {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
                     {% assign tags = item.tags | join: ", " | default: site.default_empty %}
-                    {% assign summary = item.short_summary %}
+                    {% assign displayed_summary = item.short_summary %}
 
                     {% comment %}
                     <!-- Exit the projects_folder loop -->
@@ -79,8 +79,8 @@
                 <h4>Tags: <span class="info">{{ tags }}</span> </h4>
             {% endif %}
             
-            {% if summary %}
-            <p><span class="headliner">Summary:</span> {{summary}}</p>
+            {% if displayed_summary %}
+            <p><span class="headliner">Summary:</span> {{ displayed_summary }}</p>
             {% endif %}
         </li>
         
