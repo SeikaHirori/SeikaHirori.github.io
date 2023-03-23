@@ -22,37 +22,39 @@
         <!-- By default, assign default values to be from the GitHub repo -->
         {% endcomment %}
         {% for github_repo in sorted_github_repo %} 
-            
-            {% if github_repo.id == current_repo_id %}
-                {% assign title = sorted_github_repo.name | replace: "-", " " %}
-                {% assign repo_link = sorted_github_repo.html_url %}
-                {% assign last_updated = sorted_github_repo.pushed_at | date_to_string %}
-                {% assign tech = sorted_github_repo.language %}
-                {% assign short_summary = sorted_github_repo.description %}
+            {% assign github_repo_id = github_repo.id %}
+            {% if github_repo_id == current_repo_id %}
+                {% assign title = github_repo.name | replace: "-", " " | replace: "_", " " %}
+                {% assign repo_link = github_repo.html_url %}
+                {% assign last_updated = github_repo.pushed_at | date_to_string %}
+                {% assign tech = github_repo.language %}
+                {% assign short_summary = github_repo.description %}
 
                 {% break %}
             {% endif %}
         {% endfor %}
 
-        {% for item in projects_folder %}
-            {% if item.repo_id == current_repo_id %}
-                {% comment %}
-                <!-- Start grabbing information from project file -->
-                {% endcomment %}
-                {% assign title = item.title | default: site.default_empty %}
-                {% assign url = item.url  %}
-                {% assign repo_link = item.repo_link %}
-                {% assign last_updated = item.last_updated | date_to_string  | default: site.default_empty %}
-                {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
-                {% assign tags = item.tags | join: ", " | default: site.default_empty %}
-                {% assign summary = item.short_summary %}
+        {% comment }
+            {% for item in projects_folder %}
+                {% if item.repo_id == current_repo_id %}
+                    {% comment %}
+                    <!-- Start grabbing information from project file -->
+                    {% endcomment %}
+                    {% assign title = item.title | default: site.default_empty %}
+                    {% assign url = item.url  %}
+                    {% assign repo_link = item.repo_link %}
+                    {% assign last_updated = item.last_updated | date_to_string  | default: site.default_empty %}
+                    {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
+                    {% assign tags = item.tags | join: ", " | default: site.default_empty %}
+                    {% assign summary = item.short_summary %}
 
-                {% comment %}
-                <!-- Exit the projects_folder loop -->
-                {% endcomment %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
+                    {% comment %}
+                    <!-- Exit the projects_folder loop -->
+                    {% endcomment %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        {% endcomment %}
 
         
 
