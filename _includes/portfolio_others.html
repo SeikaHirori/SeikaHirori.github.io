@@ -1,34 +1,121 @@
-{% assign others = site.projects | sort: "last_updated" | reverse %}
+{% comment %}
+<!-- Grab list of items from projects folder -->
+{% endcomment %} 
+{% assign projects_folder = site.projects | sort: "last_updated" | reverse %}
+
+{% comment %}
+<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
+{% endcomment %}
+{% assign sorted_github_repo = site.github.public_repositories   
+    | sort: "pushed_at" 
+    | reverse
+%}
+
+{% assign portfolio_showcases = site.data.portfolio_showcase %}
+
+{% assign blacklisted = site.data.github_repo_blacklist %}
 
 <ul>
+    {% for github_repo in sorted_github_repo %} 
+        {% assign github_repo_id = github_repo.id %}
+        {% assign skip_entry = false %}
 
-{% for project in others %}
-    {% assign is_in_showcase = false %}
-    {% for showcase in site.data.portfolio_showcase %}
-        {% if showcase.project_id == project.project_id %}
-            {% assign is_in_showcase = true %}
-            {% break %}
+        
+        {% comment %}
+        <!-- Change skip_entry to true if current repo is in portfolio showcase -->
+        {% endcomment %}
+        {% for entry in portfolio_showcases %}
+            {% assign portfolio_id = entry.repo_id %}
+            {% if github_repo_id == portfolio_id %}
+                {% assign skip_entry = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        {% for entry in blacklisted %}
+            {% assign blacklist_id = entry.repo_id %}
+            {% if blacklist_id == github_repo_id %}
+                {% assign skip_entry = true %}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+    
+        {% comment %}
+        <!-- Skip current GitHub repo item if it skip_entry is true  -->
+        {% endcomment %}
+        {% if skip_entry == true %}
+            {% continue %}
         {% endif %}
-    {% endfor %}
 
-    {% if is_in_showcase %}
-        {% continue %}
-    {% else %}
+        {% comment %}
+        <!-- Clean state variables for HTML -->
+        {% endcomment %}
+
+        {% assign title = nil %}
+        {% assign url = nil  %}
+        {% assign repo_link = nil %}
+        {% assign last_updated = nil | date_to_string  | default: site.default_empty %}
+        {% assign tech = nil %}
+        {% assign tags = nil %}
+        {% assign displayed_summary = nil %}
+
+
+        {% comment %}
+        <!-- By default, assign default values to be from the GitHub repo -->
+        {% endcomment %}
+
+        {% assign title = github_repo.name | replace: "-", " " | replace: "_", " " %}
+        {% assign repo_link = github_repo.html_url %}
+        {% assign last_updated = github_repo.pushed_at | date_to_string %}
+        {% assign tech = github_repo.language %}
+        {% assign displayed_summary = github_repo.description %}
+
+
+        {% for item in projects_folder %}
+            {% assign project_id = item.repo_id %}
+            {% if project_id == github_repo_id %}
+                {% comment %}
+                <!-- Start grabbing information from project file -->
+                {% endcomment %}
+
+                {% assign title = item.title | default: site.default_empty %}
+                {% assign url = item.url  %}
+                {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
+                {% assign tags = item.tags | join: ", " | default: site.default_empty %}
+                {% assign displayed_summary = item.short_summary %}
+
+                {% comment %}
+                <!-- Exit the projects_folder loop -->
+                {% endcomment %}
+
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        
         <li>
-            <h2><a href="{{project.url}}">{{ project.title }}</a></h2>
-            <h4> Last Updated: <span class="info">{{ project.last_updated | date_to_string  | default: site.default_empty }} </span></h4>
-            <h3> Tech: <span class="info">{{ project.tech | join: ", "  | default: site.default_empty }}</span></h3>
-            <h4> Tags: <span class="info">{{ project.tags | join: ", "  | default: site.default_empty }}</span></h4>
-            
-            {% assign summary = project.short_summary %}
-            {% if project.short_summary | strip_newlines %}
-                <p>
-                    <span class="headliner">Summary:</span>
-                    {{ summary }}
-                </p>                
+            {% if url %}
+                <h2><a href=" {{ url }} ">{{ title }}</a></h2>
+            {% else %}
+                <h2 class="info">{{ title }}</h2>
             {% endif %}
             
+            <h4>Last Updated: <span class="info">{{ last_updated }}</span></h4>
+            
+            {% if repo_link %}
+                <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
+            {% endif %}
+            
+            <h3>Tech: <span class="info">{{ tech }}</span> </h3>
+            
+            {% if tags | strip %}
+                <h4>Tags: <span class="info">{{ tags }}</span> </h4>
+            {% endif %}
+            
+            {% if displayed_summary %}
+            <p><span class="headliner">Summary:</span> {{ displayed_summary }}</p>
+            {% endif %}
         </li>
-    {% endif %}
-{% endfor %}
+        
+    {% endfor %}
 </ul>

@@ -34,7 +34,6 @@
             {% endif %}
         {% endfor %}
 
-        {% comment }
             {% for item in projects_folder %}
                 {% if item.repo_id == current_repo_id %}
                     {% comment %}
@@ -42,8 +41,6 @@
                     {% endcomment %}
                     {% assign title = item.title | default: site.default_empty %}
                     {% assign url = item.url  %}
-                    {% assign repo_link = item.repo_link %}
-                    {% assign last_updated = item.last_updated | date_to_string  | default: site.default_empty %}
                     {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
                     {% assign tags = item.tags | join: ", " | default: site.default_empty %}
                     {% assign displayed_summary = item.short_summary %}
@@ -54,7 +51,6 @@
                     {% break %}
                 {% endif %}
             {% endfor %}
-        {% endcomment %}
 
         
 

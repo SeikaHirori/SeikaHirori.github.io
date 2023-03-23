@@ -6,7 +6,7 @@ date: 2023-03-05
 last_updated: 2023-03-06
 
 repo_link: https://github.com/SeikaHirori/WordScramble
-repo_id:
+repo_id: 610022754
 
 tech:
     - Swift
