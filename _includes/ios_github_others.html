@@ -101,9 +101,12 @@
                 {% assign title = item.title %}
             {% endif %}
 
+            {% comment %}
+            <!-- Retiring to use GitHub metadata's push_at date so it's known that the repo is being worked on in real time -->
             {% if item.last_updated %}
                 {% assign last_updated = item.last_updated | date_to_string %}
             {% endif %}
+            {% endcomment %}
 
             {% if item.tech %}
                 {% assign tech = item.tech | join: ", " %}

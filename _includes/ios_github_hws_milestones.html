@@ -100,9 +100,13 @@
                 {% assign title = item.title %}
             {% endif %}
 
+            {% comment %}
+            <!-- Retiring to use GitHub metadata's push_at date so it's known that the repo is being worked on in real time -->
+
             {% if item.last_updated %}
                 {% assign last_updated = item.last_updated | date_to_string %}
             {% endif %}
+            {% endcomment %}
 
             {% if item.tech %}
                 {% assign tech = item.tech | join: ", " %}
@@ -133,7 +137,7 @@
             {% endif %}
         </h2>
         <h4>
-            Last Updated: <span class="info">{{ last_updated}}</span>
+            Last Updated: <span class="info">{{ last_updated }}</span>
         </h4>
         <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
         <h3>Tech: <span class="info">{{ tech }} </span> 
