@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-
+{% assign title = page.title | default: site.default_empty %}
 
 
 <div>
-    <h1> {{ page.title | default: site.default_empty }} </h1>
+    <h1> {{ title }} </h1>
     <h5>
         Original Date: <span class="info">{{ page.date | date_to_string  | default: site.default_empty  }}</span>
     </h5>

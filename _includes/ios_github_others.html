@@ -72,6 +72,18 @@
     {% endcomment %}
 
     {% comment %}
+    <!-- Reset all values to nil so it doesn't carry over to next loop -->
+    {% endcomment %}
+    {% assign url = nil %}
+    {% assign title = nil %}
+    {% assign repo_link = nil %}
+    {% assign repo_id = nil %}
+    {% assign last_updated = nil %}
+    {% assign tech = nil %}
+    {% assign tags = nil  %}
+    {% assign short_summary = nil %}
+
+    {% comment %}
     <!-- By default, assign default values to be from the GitHub repo -->
     {% endcomment %}
     {% assign title = repo.name | replace: "-", " " %}
