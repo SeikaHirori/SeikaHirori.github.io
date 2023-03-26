@@ -26,16 +26,28 @@ layout: default
 {% comment %}
 <!-- Grab information from GitHub data -->
 {% endcomment %}
-{% for entry in sorted_github_repo %}
+{% for repo in sorted_github_repo %}
+    {% if page.repo_id == repo.id %}
 
+        {% assign title = repo.name | replace: "-", " " | replace: "_", " " %}
+        {% assign repo_link = repo.html_url %}
+        {% assign created_date = repo.created_at | date_to_string %}
+        {% assign last_updated = repo.pushed_at | date_to_string %}
+        {% assign tech = repo.language %}
+        {% assign short_summary = repo.description %}
+        {% break %}
+    {% endif %}
 {% endfor %}
 
-
-{% assign title = page.title | default: site.default_empty %}
+{% comment %}
+<!-- Grab information from page itself (for now; migrated to variables) -->
 {% assign created_date = page.date | date_to_string  | default: site.default_empty%}
 {% assign last_updated = page.last_updated | date_to_string   | default: site.default_empty %}
 {% assign repo_link = page.repo_link | default: site.default_empty %}
 {% assign repo_id = nil %}
+{% endcomment %}
+
+{% assign title = page.title | default: site.default_empty %}
 {% assign tech = page.tech | join: ", "  | default: site.default_empty   %}
 {% assign tags = page.tags | join: ", "   | default: site.default_empty   %}
 {% assign specifications = page.specifications %}
@@ -55,9 +67,11 @@ layout: default
     <h3>
         Tech: <span class="info">{{ tech }}</span>
     </h3>
-    <h4>
-        Tags: <span class="info">{{ tags }}</span>
-    </h4>
+    {% if tags %}
+        <h4>
+            Tags: <span class="info">{{ tags }}</span>
+        </h4>
+    {% endif %}
     <h4>
         Repo: <a href="{{ repo_link }}">{{ repo_link }}</a>
     </h4>
