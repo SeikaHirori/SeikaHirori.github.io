@@ -48,7 +48,11 @@ layout: default
 {% endcomment %}
 
 {% comment %}
-<!-- Grab specfic information from page -->
+<!-- Grab specfic information from page 
+    * Page.title is needed if name from GitHub metadata is imprecise for my liking
+        * This applies to other information as well.
+    * Obtain tags as it is not possible with GitHub metadata
+-->
 {% endcomment %}
 {% assign title = page.title | default: site.default_empty %}
 {% assign tech = page.tech | join: ", "  | default: site.default_empty   %}
