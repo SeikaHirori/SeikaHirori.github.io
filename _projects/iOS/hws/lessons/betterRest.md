@@ -7,6 +7,7 @@ last_updated: 2023-03-04
 repo: https://github.com/SeikaHirori/BetterRest
 repo_id: 608993797
 
+
 tech:
     - Swift
     - SwiftUI
