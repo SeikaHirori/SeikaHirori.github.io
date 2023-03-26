@@ -47,6 +47,9 @@ layout: default
 {% assign repo_id = nil %}
 {% endcomment %}
 
+{% comment %}
+<!-- Grab specfic information from page -->
+{% endcomment %}
 {% assign title = page.title | default: site.default_empty %}
 {% assign tech = page.tech | join: ", "  | default: site.default_empty   %}
 {% assign tags = page.tags | join: ", "   | default: site.default_empty   %}
