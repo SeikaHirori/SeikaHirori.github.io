@@ -1,13 +1,47 @@
 ---
 layout: default
 ---
+
+{% comment %}
+<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
+{% endcomment %}
+
+{% assign sorted_github_repo = site.github.public_repositories   
+    | sort: "pushed_at" 
+    | reverse
+%}
+
+{% comment %}
+<!--- Reset all values to nil so it doesn't carry over to next loop --->
+{% endcomment %}
+{% assign url = nil %}
+{% assign title = nil %}
+{% assign repo_link = nil %}
+{% assign repo_id = nil %}
+{% assign created_date = nil %}
+{% assign last_updated = nil %}
+{% assign tech = nil %}
+{% assign tags = nil  %}
+{% assign short_summary = nil %}
+
+{% comment %}
+<!-- Grab information from GitHub data -->
+{% endcomment %}
+{% for entry in sorted_github_repo %}
+
+{% endfor %}
+
+
 {% assign title = page.title | default: site.default_empty %}
+{% assign created_date = page.date | date_to_string  | default: site.default_empty%}
 
-
+{% comment %}
+<!-- Display the information -->
+{% endcomment%}
 <div>
     <h1> {{ title }} </h1>
     <h5>
-        Original Date: <span class="info">{{ page.date | date_to_string  | default: site.default_empty  }}</span>
+        Original Date: <span class="info">{{ created_date }}</span>
     </h5>
     <h3>
         Last updated: <span class="info">{{ page.last_updated | date_to_string   | default: site.default_empty  }} </span>
