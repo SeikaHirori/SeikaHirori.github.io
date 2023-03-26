@@ -1,4 +1,19 @@
 {% comment %}
+<!-- Grab metadata repo by language, Swift -->
+{% endcomment %}
+{% assign language = "Swift" %}
+
+{% comment %}
+<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
+{% endcomment %}
+{% assign sorted_repo = site.github.public_repositories   
+    | where_exp: "repo", "repo.language == language"
+    | sort: "pushed_at" 
+    | reverse
+%}
+
+
+{% comment %}
 <!-- PURPOSE: Grab projects that are listed in "_data/hws_milestones.yml" 
     * Replace old file "hws_milestones.html"
 -->
@@ -10,13 +25,6 @@
 {% endcomment %}
 {% assign hws_list = site.projects | where_exp: "project", "project.path contains 'iOS/'" %}
 
-{% comment %}
-<!-- Use plugin "GitHub metadata" to obtain list of repo items from  -->
-{% endcomment %}
-{% assign sorted_repo = site.github.public_repositories   
-    | sort: "pushed_at" 
-    | reverse
-%}
 
 
 {% for repo in sorted_repo %}
@@ -61,11 +69,10 @@
 
     {% comment %}
     <!--- If project isn't using the lang, "Swift", skip. --->
-    {% endcomment %}
     {% if repo.language != "Swift" %}
         {% continue %}
     {% endif %}
-
+    {% endcomment %}
 
     {% comment %}
     <!--- Otherwise, display it. --->
@@ -141,13 +148,12 @@
 {% endcomment %}
 <ul>
     <li>
-        <h2>
-            {% if url %}
-                <a href="{{ url }}">{{ title }}</a>
-            {% else %}
-                {{ title }}
-            {% endif %}
-        </h2>
+        
+        {% if url %}
+            <h2><a href="{{ url }}">{{ title }}</a></h2>
+        {% else %}
+            <h2 class="info">{{ title }}</h2>
+        {% endif %}
         <h4>
             Last Updated: <span class="info">{{ last_updated}}</span>
         </h4>

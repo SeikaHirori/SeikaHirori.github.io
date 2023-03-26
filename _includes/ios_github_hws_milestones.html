@@ -61,10 +61,11 @@
 
     {% comment %}
     <!--- If project isn't using the lang, "Swift", skip. --->
-    {% endcomment %}
-    {% if repo.language != "Swift" %}
+    <!-- {% if repo.language != "Swift" %}
         {% continue %}
-    {% endif %}
+    {% endif %} -->
+    {% endcomment %}
+
 
 
     {% comment %}
@@ -142,13 +143,11 @@
 {% endcomment %}
 <ul>
     <li>
-        <h2>
-            {% if url %}
-                <a href="{{ url }}">{{ title }}</a>
-            {% else %}
-                {{ title }}
-            {% endif %}
-        </h2>
+        {% if url %}
+            <h2><a href="{{ url }}">{{ title }}</a></h2>
+        {% else %}
+            <h2 class="info">{{ title }}</h2>
+        {% endif %}
         <h4>
             Last Updated: <span class="info">{{ last_updated }}</span>
         </h4>
