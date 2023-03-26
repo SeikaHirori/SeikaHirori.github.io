@@ -118,7 +118,8 @@ layout: default
     {% endif %}
 </div>
 
-
+{% comment %}
+<!-- Retired for now. Possibly for the future, might use the page content as short summary. -->
 <div>
     
     {% assign content = content | strip_newlines %}
@@ -129,3 +130,4 @@ layout: default
         {{ content }}
     {% endif %}
 </div>
+{% endcomment %}
