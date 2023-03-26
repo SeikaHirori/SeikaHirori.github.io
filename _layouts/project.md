@@ -14,7 +14,6 @@ layout: default
 {% comment %}
 <!--- Reset all values to nil so it doesn't carry over to next loop --->
 {% endcomment %}
-{% assign url = nil %}
 {% assign title = nil %}
 {% assign repo_link = nil %}
 {% assign repo_id = nil %}
@@ -34,6 +33,13 @@ layout: default
 
 {% assign title = page.title | default: site.default_empty %}
 {% assign created_date = page.date | date_to_string  | default: site.default_empty%}
+{% assign last_updated = page.last_updated | date_to_string   | default: site.default_empty %}
+{% assign repo_link = page.repo_link | default: site.default_empty %}
+{% assign repo_id = nil %}
+{% assign tech = page.tech | join: ", "  | default: site.default_empty   %}
+{% assign tags = page.tags | join: ", "   | default: site.default_empty   %}
+{% assign specifications = page.specifications %}
+{% assign short_summary = page.short_summary | strip_newlines  %}
 
 {% comment %}
 <!-- Display the information -->
@@ -44,20 +50,20 @@ layout: default
         Original Date: <span class="info">{{ created_date }}</span>
     </h5>
     <h3>
-        Last updated: <span class="info">{{ page.last_updated | date_to_string   | default: site.default_empty  }} </span>
+        Last updated: <span class="info">{{ last_updated }} </span>
     </h3>
     <h3>
-        Tech: <span class="info">{{ page.tech | join: ", "  | default: site.default_empty  }}</span>
+        Tech: <span class="info">{{ tech }}</span>
     </h3>
     <h4>
-        Tags: <span class="info">{{ page.tags | join: ", "   | default: site.default_empty  }}</span>
+        Tags: <span class="info">{{ tags }}</span>
     </h4>
     <h4>
-        Repo: <a href="{{ page.repo_link }}">{{ page.repo_link   | default: site.default_empty  }}</a>
+        Repo: <a href="{{ repo_link }}">{{ repo_link }}</a>
     </h4>
     <h4>Specifications: 
-        {% if page.specifications %}
-        <a href="{{ page.specifications }}">{{ page.specifications }}</a>
+        {% if specifications %}
+        <a href="{{ specifications }}">{{ specifications }}</a>
         {% else %}
             ໒(⊙ᴗ⊙)७✎▤
         {% endif %}
@@ -67,7 +73,6 @@ layout: default
 <br>
 
 <div>
-    {% assign short_summary = page.short_summary | strip_newlines %}
     {% if short_summary == "" %}
         {% assign short_summary = "໒(⊙ᴗ⊙)७✎▤" %}
     {% endif %}
@@ -81,7 +86,7 @@ layout: default
 <div>
     <h2>Reflection Posts:</h2>
 
-    {% assign posts = site.posts | where_exp: 'post', "post.project_id contains page.project_id" %}
+    {% assign posts = site.posts | where_exp: 'post', "post.repo_id contains page.repo_id" %}
     {% assign post_size = posts | size %}
     {% if post_size > 0 %}
     <ul>
