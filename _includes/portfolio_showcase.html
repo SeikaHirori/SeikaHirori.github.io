@@ -54,7 +54,9 @@
                 {% assign url = item.url  %}
                 {% assign tech = item.tech | join: ", "  | default: site.default_empty %}
                 {% assign tags = item.tags | join: ", " | default: site.default_empty %}
-                {% assign displayed_summary = item.short_summary %}
+                {% if item.short_summary %}
+                    {% assign displayed_summary = item.short_summary %}
+                {% endif %}
 
                 {% comment %}
                 <!-- Exit the projects_folder loop -->
@@ -98,15 +100,12 @@
                 {% assign post_size = posts | size %}
                 {% if post_size > 0 %}
                 <h4>Blog Posts:</h4>
-                <p>
-                    <ul>
-                        {% for post in posts limit:3 %}
-                        <li>
-                            <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </p>
+                    {% for post in posts limit:3 %}
+                    <p>
+                        * <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+                    </p>
+            
+                    {% endfor %}
                 {% endif %}
             </div>
         </li>
