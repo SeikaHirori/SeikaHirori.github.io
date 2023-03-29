@@ -4,7 +4,7 @@ title: About
 ---
 # {{ page.title }}
 
-Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Prior to becoming an iOS developer, I obtained my bachelor's degree in psychology and had pursed the performing arts. After exposure to both fields, I realized that my skill sets were not being fully realized. 
+Welcome! My name is Richard, or Seika! I am an aspiring iOS developer! Prior to becoming an iOS developer, I had pursed different endevaors. I was heavily involved with the performing arts in my past life.  obtained my bachelor's degree in psychology. After exposure to both fields, I realized that my skill sets were not being fully realized. 
 
 In April 2022, I committed full-time to teaching myself software development due to my love of:
 ```

@@ -105,7 +105,7 @@ layout: default
 <br>
 
 <div>
-    <h2>Reflection Posts:</h2>
+    <h2>Blog Posts:</h2>
 
     {% assign posts = site.posts | where_exp: 'post', "post.repo_id contains page.repo_id" %}
     {% assign post_size = posts | size %}
