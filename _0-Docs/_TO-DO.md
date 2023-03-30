@@ -46,8 +46,10 @@
                 - Learning courses, books, and other information I have used on my learning journey.
 
 - About Me page:
-    - Longer blurb about...
+    - [ ] Longer blurb about...
         - Background of life
         - My "how" and "why" into programming
         - My goals/ objectve for this new career
         - My current hobbies :3 
+    - [ ] Mailto form
+        - Use this as reference: https://www.w3docs.com/snippets/html/how-to-create-mailto-forms.html
