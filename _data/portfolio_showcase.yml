@@ -8,13 +8,13 @@
 #   project_id:
 
 ### === List starts here === ###
-- project_id: janken_001
-  repo_id: 602692780
-  name: Janken [Rock, Paper, Scissors]
-
 - project_id: edutainment_001
   repo_id: 615476794
   name: Edutainment with multiplication
+
+- project_id: janken_001
+  repo_id: 602692780
+  name: Janken [Rock, Paper, Scissors]
 
 - project_id: missing_img_001
   repo_id: 610657556
