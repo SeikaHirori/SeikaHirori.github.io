@@ -152,6 +152,7 @@
             Last Updated: <span class="info">{{ last_updated }}</span>
         </h4>
         <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
+        <h4>Repo ID: <span class="info">{{ current_id }}</span></h4>
         <h3>Tech: <span class="info">{{ tech }} </span> 
         </h3>
         <h4>Tags: <span class="info">{{ tags }} </span>
@@ -160,6 +161,24 @@
             <p><span class="headliner">Summary:</span> {{ short_summary}}</p>
         
         {% endif %}
+
+        {% comment %}
+            <!-- Display Blog Posts  -->
+        {% endcomment %}
+        <div>
+            
+            {% assign posts = site.posts | where_exp: 'post', "post.repo_id contains current_id" %}
+            {% assign post_size = posts | size %}
+            {% if post_size > 0 %}
+            <h4>Blog Posts:</h4>
+                {% for post in posts limit:3 %}
+                <p>
+                    * <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+                </p>
+        
+                {% endfor %}
+            {% endif %}
+        </div>
     </li>
 </ul>
 
