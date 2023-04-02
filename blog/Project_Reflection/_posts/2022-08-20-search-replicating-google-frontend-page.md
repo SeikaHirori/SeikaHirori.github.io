@@ -2,7 +2,8 @@
 layout: post
 title: Search | Replicating Google Frontend Page
 repo: 
-project_id: 
+repo_id:
+- 523501568 
 tags:
     - CS50w
 ---

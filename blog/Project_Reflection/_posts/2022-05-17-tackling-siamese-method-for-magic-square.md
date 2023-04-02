@@ -2,7 +2,8 @@
 layout: post
 title: Tackling Siamese Method for Magic Square
 repo: 
-project_id: 
+repo_id: 
+- 492983561
 tags:
 - Imported
 

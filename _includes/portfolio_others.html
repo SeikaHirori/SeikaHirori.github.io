@@ -115,6 +115,24 @@
             {% if displayed_summary %}
             <p><span class="headliner">Summary:</span> {{ displayed_summary }}</p>
             {% endif %}
+
+            {% comment %}
+                <!-- Display Blog Posts  -->
+            {% endcomment %}
+            <div>
+                
+                {% assign posts = site.posts | where_exp: 'post', "post.repo_id contains github_repo_id" %}
+                {% assign post_size = posts | size %}
+                {% if post_size > 0 %}
+                <h4>Blog Posts:</h4>
+                    {% for post in posts limit:3 %}
+                    <p>
+                        * <a href="{{ post.url | relative_url }}">{{ post.date | date_to_string }}: {{ post.title }}</a>
+                    </p>
+            
+                    {% endfor %}
+                {% endif %}
+            </div>
         </li>
         
     {% endfor %}

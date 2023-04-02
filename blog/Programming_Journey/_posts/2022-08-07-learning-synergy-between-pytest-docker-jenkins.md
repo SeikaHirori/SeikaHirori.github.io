@@ -2,7 +2,8 @@
 layout: post
 title: 'Learning: The synergy between Pytest, Docker, and Jenkins'
 repo: 
-project_id: 
+repo_id:
+- 518595990 
 tags:
 - Imported
 ---
