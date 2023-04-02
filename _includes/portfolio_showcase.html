@@ -23,6 +23,7 @@
         {% assign title = nil %}
         {% assign url = nil  %}
         {% assign repo_link = nil %}
+        {% assign repo_id = nil %}
         {% assign last_updated = nil | date_to_string  | default: site.default_empty %}
         {% assign tech = nil %}
         {% assign tags = nil %}
@@ -80,6 +81,8 @@
             {% if repo_link %}
                 <h4>Repo link: <a href="{{ repo_link }}">{{ repo_link }}</a></h4>
             {% endif %}
+
+            <h4>Repo ID: <span class="info">{{ portfolio_repo_id }}</span></h4>
             
             <h3>Tech: <span class="info">{{ tech }}</span> </h3>
             

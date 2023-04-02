@@ -2,7 +2,8 @@
 layout: post
 title: Why Full-Stack Now?
 repo: 
-project_id: 
+repo_id: 
+- 520648082
 tags: 
     - Journal
 ---
