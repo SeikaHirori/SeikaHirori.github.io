@@ -36,3 +36,6 @@
 
 - Note #6 | Adding code comments when using Liquid language
     - https://shopify.github.io/liquid/tags/template/
+
+- Note #7 | How to grab GitHub repo id
+    - https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository
