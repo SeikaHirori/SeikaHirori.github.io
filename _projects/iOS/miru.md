@@ -2,9 +2,8 @@
 layout: project
 title: Miru 
 tech: 
-    - Python
-    - Django
-    - HTML
+    - Swift
+    - SwiftUI
 
 repo_link: https://github.com/SeikaHirori/miru
 repo_id: 520648082

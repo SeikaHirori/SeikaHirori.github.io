@@ -2,12 +2,16 @@
 # Displayed noteworthy projects. This needs to be updated manually
 
 ### Template:
-# - name:
-#   portfolio_page_link:
-#   tech:
-#   project_id:
+# - project_id:
+#   repo_id:
+#   name:
+
 
 ### === List starts here === ###
+- project_id: miru_001
+  repo_id: 520648082
+  name: Miru 「見る」
+
 - project_id: edutainment_001
   repo_id: 615476794
   name: Edutainment with multiplication
@@ -23,3 +27,4 @@
 - project_id: automate_pandoc_001
   repo_id: 612693200
   name: Automate pandocs by making a bash script
+
