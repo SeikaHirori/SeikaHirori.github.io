@@ -4,6 +4,13 @@
 
 - repo_id: 520648082
   name: Miru 「見る」
+  tags:
+    - Personal project
+
+- repo_id: 627053902
+  name: Drawing
+  tags:
+    - HwS
 
 - repo_id: 615476794
   name: Edutainment Math
